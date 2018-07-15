@@ -1,0 +1,31 @@
+{
+  "name": "water_for_the_environment",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "author": "jason.guo@iconagency.com.au",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "dev": "yarn run development",
+    "development": "gulp",
+    "prod": "yarn run production",
+    "production": "gulp",
+    "watch": "gulp watch",
+    "test": "gulp test",
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "beeper": "^1.1.1",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
+    "postcss-import": "^11.1.0"
+  }
+}

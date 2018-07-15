@@ -1,0 +1,47 @@
+<?php
+/**
+ * @file
+ * Code for the Water for the Environment feature.
+ */
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function water_for_the_environment_theme_registry_alter(&$theme_registry) {
+  // Defined path to the current module.
+  $module_path = drupal_get_path('module', 'water_for_the_environment');
+  // Find all .tpl.php files in this module's folder recursively.
+  $template_file_objects = drupal_find_theme_templates($theme_registry, '.tpl.php', $module_path);
+  // Iterate through all found template file objects.
+  foreach ($template_file_objects as $key => $template_file_object) {
+    // If the template has not already been overridden by a theme.
+    if (!isset($theme_registry[$key]['theme path']) || !preg_match('#/themes/#', $theme_registry[$key]['theme path'])) {
+      // Alter the theme path and template elements.
+      $theme_registry[$key]['theme path'] = $module_path;
+      $theme_registry[$key] = array_merge($theme_registry[$key], $template_file_object);
+      $theme_registry[$key]['type'] = 'module';
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_info_alter().
+
+function water_for_the_environment_entity_info_alter(&$entity_info) {
+  // Add addtional view modes needed by the design
+  $entity_info['paragraphs_item']['view modes'] = array(
+    'embedded_media' => array(
+      'label' => t('Embedded media'),
+      'custom settings' => TRUE,
+    ),
+  );
+}
+*/
+
+function water_for_the_environment_preprocess(&$vars, $hook) {
+  // Add custom stylesheet and script when paragraphs are displayed
+  if ($hook == 'paragraphs_items') {
+    drupal_add_js(drupal_get_path('module', 'water_for_the_environment') . '/js/water_for_the_environment.js');
+    drupal_add_css(drupal_get_path('module', 'water_for_the_environment') . '/css/water_for_the_environment.css');
+  }
+}

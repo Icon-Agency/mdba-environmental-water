@@ -1,0 +1,286 @@
+@charset "utf-8";
+// Classes specific to Environmental Water content type pages
+body.node-type-ew-pages {
+  .no-float {
+    float: none;
+  }
+
+  .field-name-body {
+    font-size: 1.2em;
+  }
+
+  .field-name-field-ew-pb-text,
+  .field-name-field-ew-pb-more-link {
+    margin-bottom: 1em;
+  }
+
+  // Sub-navigation menu
+  .ew-navigation {
+    background-color: #EBEBEB;
+
+    .menu-name-menu-environmental-water {
+      .menu {
+        list-style: none;
+        display: table;
+
+        li {
+          display: table-cell;
+          padding: 0;
+          border-left: 1px solid #D9D9D9;
+
+          &:last-of-type {
+            border-right: 1px solid #D9D9D9;
+          }
+
+          a {
+            text-align: center;
+            padding: 20px 10px 16px 10px;
+            border-bottom: 3px solid transparent;
+            line-height: 1;
+            display: table-cell;
+            text-decoration: none;
+            color: #5F6062;
+          }
+
+          &.active-trail.active {
+            background: #fff;
+
+            a {
+              border-bottom-color: #00A18E;
+              color: #00A18E;
+            }
+          }
+
+          &:hover {
+            background: #fff;
+
+            a {
+              border-bottom-color: #00A18E;
+              color: #00A18E;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .field-name-field-ew-pb-more-link a {
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1;
+    padding-right: 18px;
+    position: relative;
+    text-align: inherit;
+
+    &::after {
+      content: "e";
+      font-family: "untitled-font-1" !important;
+      position: absolute;
+      top: auto;
+      font-size: inherit;
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      line-height: 1 !important;
+      display: inline;
+      right: 0;
+      bottom: 2px;
+    }
+  }
+
+  .field-name-field-ew-optional-components {
+    // Classes specific to Environmental Water Optional Component paragraph bundle
+    .paragraphs-item-ew-optional-component {
+      padding: 25px 0;
+
+      .field-name-field-ew-pb-icon-image {
+        img {
+          width: 300px;
+          height: auto;
+        }
+      }
+
+      .col-left {
+        .field-name-field-ew-pb-icon-image {
+          margin-top: -50px;
+        }
+      }
+
+    }
+
+    .text-image {
+      float: left;
+      padding: 0;
+
+      .col-left {
+        height: 480px;
+        position: relative;
+
+        .col-left-inner {
+          max-width: 650px;
+          padding-right: 120px;
+          position: absolute;
+          top: 30%;
+          right: 0;
+        }
+
+        background-image: url(../img/bg_blue_waves.png);
+        background-size: cover;
+        color: #fff;
+      }
+
+      .col-right {
+        padding-left: 0;
+        padding-right: 0;
+        height: 480px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+
+    .media-embed {
+      background-image: url(../img/bg_media_embed.png);
+      background-size: cover;
+      padding: 50px 0;
+
+      .field-name-field-ew-pb-embedded-media {
+        padding-bottom: 50px;
+
+        iframe {
+          width: 100%;
+          height: 578px;
+          border-radius: 5px;
+        }
+
+        .media-credit {
+          font-size: 0.9em;
+          text-align: center;
+          padding: 15px 0;
+          color: #7A7070;
+        }
+      }
+
+    }
+  }
+
+  /*
+ * Responsive styles
+ */
+
+  // Tablet
+  @media (max-width: 1024px) {
+    // Sub-navagation
+    .ew-navigation {
+      .container {
+        padding: 0;
+      }
+    }
+
+    // Optional components field
+    .field-name-field-ew-optional-components {
+
+      .text-image {
+        .col-left {
+          height: 250px;
+
+          .col-left-inner {
+            padding: 0 30px;
+            top: 30px;
+          }
+        }
+        .col-right {
+          height: 250px;
+        }
+      }
+
+      .media-embed {
+        padding: 25px 0;
+
+        .field-name-field-ew-pb-embedded-media {
+          iframe {
+            height: 415px;
+          }
+          padding-bottom: 25px;
+        }
+      }
+    }
+  }
+
+  // Mobile phone
+  @media (max-width: 600px) {
+    // Optional components field
+    .field-name-field-ew-optional-components {
+
+      .text-image {
+        .col-left {
+          height: 320px;
+
+          .col-left-inner {
+            padding: 0 30px;
+            top: 20%;
+          }
+        }
+        .col-right {
+          height: 200px;
+        }
+      }
+
+      .paragraphs-item-ew-optional-component .field-name-field-ew-pb-icon-image {
+        width: 100%;
+        text-align: center;
+
+        img {
+          width: 150px;
+        }
+      }
+
+      .media-embed {
+        padding: 25px 0;
+
+        .field-name-field-ew-pb-embedded-media {
+          iframe {
+            height: 195px;
+          }
+          padding-bottom: 25px;
+        }
+      }
+    }
+
+    // Sub-navagation
+    .ew-navigation {
+      .container {
+        padding: 0;
+
+        .menu-name-menu-environmental-water {
+          .menu {
+            display: block;
+
+            li {
+              display: block;
+              border-left: none;
+              border-bottom: 1px solid #D9D9D9;
+
+              &:last-of-type {
+                border-right: none;
+              }
+
+              a {
+                padding: 10px 15px 8px;
+                display: block;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+

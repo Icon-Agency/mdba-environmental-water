@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Water for the Environment features feature.
+ */
+
+include_once 'water_for_the_environment_features.features.inc';

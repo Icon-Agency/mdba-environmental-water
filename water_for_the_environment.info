@@ -1,0 +1,7 @@
+name = Water for the Environment
+description = Water for the Environment page templates by Icon Agency
+core = 7.x
+package = MDBA
+version = 7.x-1.0
+dependencies[] = features
+dependencies[] = paragraphs

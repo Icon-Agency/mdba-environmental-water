@@ -1,0 +1,1 @@
+!!! STOP: If you are trying to change files in this directory, you don't know what you're doing. Stop. !!!
