@@ -22,16 +22,18 @@ yarn run prod
 ## For site administrator
 
 ### Installation and configuration
-
-1. Enable the following modules from the Administration area modules page (admin/modules)
-* Water for the Environment (water_for_the_environment)
-* Water for the Environment features (water_for_the_environment_features)
-
+1. Enable the following modules from the Administration area modules page (admin/modules): Water for the Environment (water_for_the_environment)
+ and Water for the Environment features (water_for_the_environment_features)
 2. Goto: admin/structure/pages/edit/node_view
 Click Variants > Landing page >Selection rules > Node:type and tick "Environmental Water Pages"
-
 3. Goto: admin/structure/types/manage/ew-pages and make sure next to *Menu settings* the menu *nvironmental Water* is checked
-4. Add new *Environmental Water pages* by going to node/add/ew-pages or click the button on the content admin page
+4. Go to URL aliases pattern settings and set pattern for *all Environmental Water Pages paths* to:
+```managing-water/water-for-environment/[node:title]```
+
+### Creating new Environmental Water pages
+Be sure to first *unpublish* the old pages you are about to replace and set their URL aliases to something like "page-title-old"
+
+Add new *Environmental Water pages* by going to node/add/ew-pages or click the button on the content admin page
 
 # More nerdy details
 ## Dependancies
