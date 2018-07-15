@@ -5,6 +5,18 @@
  */
 
 /**
+ * Implements hook_ctools_plugin_api().
+ */
+function water_for_the_environment_features_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
+  if ($module == "page_manager" && $api == "pages_default") {
+    return array("version" => "1");
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function water_for_the_environment_features_node_info() {
@@ -19,5 +31,29 @@ function water_for_the_environment_features_node_info() {
     ),
   );
   drupal_alter('node_info', $items);
+  return $items;
+}
+
+/**
+ * Implements hook_paragraphs_info().
+ */
+function water_for_the_environment_features_paragraphs_info() {
+  $items = array(
+    'ew_media_embed' => array(
+      'name' => 'Environmental Water Media Embed',
+      'bundle' => 'ew_media_embed',
+      'locked' => '1',
+    ),
+    'ew_optional_component' => array(
+      'name' => 'Environmental Water Optional Compoent',
+      'bundle' => 'ew_optional_component',
+      'locked' => '1',
+    ),
+    'ew_text_image' => array(
+      'name' => 'Environmental Water Text and Image',
+      'bundle' => 'ew_text_image',
+      'locked' => '1',
+    ),
+  );
   return $items;
 }

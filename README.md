@@ -23,14 +23,15 @@ yarn run prod
 
 ### Installation and configuration
 
-1. Enable the module from the Administration area modules page (admin/modules)
+1. Enable the following modules from the Administration area modules page (admin/modules)
+* Water for the Environment (water_for_the_environment)
+* Water for the Environment features (water_for_the_environment_features)
 
 2. Goto: admin/structure/pages/edit/node_view
 Click Variants > Landing page >Selection rules > Node:type and tick "Environmental Water Pages"
 
-3. Be sure to grand anonymous users the permission to view the below paragraph bundles.
-
-4. Be sure to grand anonymous users the permission to download any *Document* file entity files
+3. Goto: admin/structure/types/manage/ew-pages and make sure next to *Menu settings* the menu *nvironmental Water* is checked
+4. Add new *Environmental Water pages* by going to node/add/ew-pages or click the button on the content admin page
 
 # More nerdy details
 ## Dependancies
@@ -61,10 +62,5 @@ Fileds:
 
 ## Content type
 Custom fields:
-Banner image (field_ew_banner_image)
-Optional components	(field_ew_optional_components, using Paragraph ew_optional_component)
-
-## Custom Paragraph display modes:
-Default - title, icon image, text, attachments and more link
-Embedded media
-With feature image 
+* Banner image (field_ew_banner_image)
+* Optional components	(field_ew_optional_components, using Paragraph ew_optional_component)
