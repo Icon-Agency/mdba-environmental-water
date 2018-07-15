@@ -69,13 +69,13 @@ function water_for_the_environment_features_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 5,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -142,14 +142,10 @@ function water_for_the_environment_features_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 4,
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'above',

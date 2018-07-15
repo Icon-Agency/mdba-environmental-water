@@ -79,29 +79,6 @@ function water_for_the_environment_features_menu_default_menu_links() {
     'weight' => 4,
     'customized' => 1,
   );
-  // Exported menu link: menu-environmental-water_water-for-the-environment:node/4723.
-  $menu_links['menu-environmental-water_water-for-the-environment:node/4723'] = array(
-    'menu_name' => 'menu-environmental-water',
-    'link_path' => 'node/4723',
-    'router_path' => 'node/%',
-    'link_title' => 'Water for the environment',
-    'options' => array(
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => '',
-        'style' => '',
-      ),
-      'identifier' => 'menu-environmental-water_water-for-the-environment:node/4723',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
-  );
   // Exported menu link: menu-environmental-water_why-we-need-water-for-the-environment:<front>.
   $menu_links['menu-environmental-water_why-we-need-water-for-the-environment:<front>'] = array(
     'menu_name' => 'menu-environmental-water',
@@ -131,7 +108,6 @@ function water_for_the_environment_features_menu_default_menu_links() {
   t('Deciding where water goes');
   t('Delivering water for the environment');
   t('Progress and outcomes');
-  t('Water for the environment');
   t('Why we need water for the environment');
 
   return $menu_links;
