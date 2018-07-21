@@ -106,6 +106,7 @@ function water_for_the_environment_features_field_default_field_instances() {
         'ew_embed' => 'ew_embed',
         'ew_media_embed' => 'ew_media_embed',
         'ew_optional_component' => 'ew_optional_component',
+        'ew_slider' => 'ew_slider',
         'ew_text_image' => 'ew_text_image',
         'publication_groups' => -1,
         'publication_uploads' => -1,
@@ -119,6 +120,7 @@ function water_for_the_environment_features_field_default_field_instances() {
         'ew_embed' => -22,
         'ew_media_embed' => 12,
         'ew_optional_component' => 4,
+        'ew_slider' => -24,
         'ew_text_image' => 14,
         'publication_groups' => 5,
         'publication_uploads' => 6,
@@ -955,6 +957,97 @@ function water_for_the_environment_features_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'paragraphs_item-ew_slider-field_ew_pb_additional_images'.
+  $field_instances['paragraphs_item-ew_slider-field_ew_pb_additional_images'] = array(
+    'bundle' => 'ew_slider',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_ew_pb_additional_images',
+    'label' => 'Slider images',
+    'required' => 1,
+    'settings' => array(
+      'alt_field' => 1,
+      'default_image' => 0,
+      'file_directory' => 'environmental_water/images',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-ew_slider-field_ew_pb_title'.
+  $field_instances['paragraphs_item-ew_slider-field_ew_pb_title'] = array(
+    'bundle' => 'ew_slider',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_ew_pb_title',
+    'label' => 'Title',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
   // 'paragraphs_item-ew_text_image-field_ew_pb_feature_image'.
   $field_instances['paragraphs_item-ew_text_image-field_ew_pb_feature_image'] = array(
     'bundle' => 'ew_text_image',
@@ -1165,6 +1258,7 @@ function water_for_the_environment_features_field_default_field_instances() {
   t('Images that can be used in the text area of the component. Those images will <strong>not</strong> be displayed by default.');
   t('More link');
   t('Optional components');
+  t('Slider images');
   t('Sub-title');
   t('Text');
   t('Title');

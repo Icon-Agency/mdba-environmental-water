@@ -5,6 +5,15 @@ body.node-type-ew-pages {
     float: none;
   }
 
+  svg {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    padding: 50px 0 40px;
+    margin: 0 !important;
+  }
+
   .field-name-body, .banner .subtitle {
     font-size: 1.2em;
     font-weight: 400;
@@ -152,6 +161,68 @@ body.node-type-ew-pages {
 
     }
 
+    .ew-slider {
+      background: #fff;
+
+      h2 {
+          display: block;
+          text-align: center;
+      }
+
+      img {
+        margin-bottom: 0;
+      }
+
+      .slick-slide:not(.slick-active) {
+        transform: scale(0.85);
+      }
+
+      .slick-slider {
+        -webkit-transition: transform .5s ease-in-out;
+
+        img {
+          border-radius: 5px;
+        }
+      }
+
+      .slick-list {
+        padding-bottom: 50px !important;
+      }
+
+      .slick-prev, .slick-next {
+        z-index: 99;
+        &:before {
+          font-size: 50px;
+        }
+      }
+
+      .slick-prev {
+        left: 50px;
+      }
+
+      .slick-next {
+        right: 75px;
+      }
+
+      .slick-dots {
+        bottom: -5px;
+
+        li button:before {
+          font-size: 16px;
+          opacity: 1;
+          color: #fff;
+          -webkit-text-stroke-width: 2px;
+          -webkit-text-stroke-color: #1C2C51;
+        }
+
+        li.slick-active button:before {
+          color: #007FB9;
+        }
+
+      }
+
+    }
+
     .text-image {
       float: left;
       padding: 0;
@@ -272,8 +343,9 @@ body.node-type-ew-pages {
     .field-name-field-ew-optional-components {
 
       .paragraphs-item-environmental-water-highlights {
+
         .row-wrapper {
-          margin: 15px 0;
+          margin: 0px 0 45px 15px;
 
           .col-left {
             padding-left: 0;
@@ -389,9 +461,12 @@ body.node-type-ew-pages {
     }
   }
 
+  .whos-who .whos-who-river .item .ww-footer svg {
+    height: 16px !important;
+  }
+
   .report-card-wrapper {
     background-color: #f0ede8;
-    padding: 25px 0;
 
     .report-card {
       th {

@@ -31,7 +31,6 @@
   <?php print render($content); ?>
 </div>
 
-
 <script>
   (function ($, Drupal) {
 
@@ -296,6 +295,65 @@
           }
         }
         // EOF Water summary custom script
+
+        if ($(".whos-who").length) {
+          var globalData
+
+          $(document).ready(function(){
+
+            var svgChevronIcon = '<svg aria-hidden="true" data-prefix="far" data-icon="chevron-down" class="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path></svg>'
+            var svgCloseIcon = '<svg aria-hidden="true" data-prefix="far" data-icon="times" class="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path></svg>'
+
+            $('.whos-who-river').on('click', '.item .ww-footer', function(){
+              if($(this).prev().hasClass('open')){
+                $(this).prev().removeClass('open')
+                $(this).prev().stop().slideUp()
+                $(this).removeClass('close')
+                $(this).html(svgChevronIcon + ' Main Activities')
+              }else{
+                $(this).prev().addClass('open')
+                $(this).prev().stop().slideDown()
+                $(this).addClass('close')
+                $(this).html(svgCloseIcon + ' Close')
+              }
+            })
+          })
+
+
+          $(window).load(function(){
+            $.get(Drupal.settings.pathToEWModule + '/data/whosWho.json', function(data){
+              globalData = data.who_who.items
+              init();
+            })
+          })
+
+          var init = function () {
+
+            $.each(globalData, function(index, item) {
+              var $whosWhoItem = getTemplate()
+
+              $whosWhoItem.addClass("item" + item.item_no)
+              $(".info h4", $whosWhoItem).html(item.label)
+              $(".info p", $whosWhoItem).html(item.summary)
+              $(".info img", $whosWhoItem).attr("src", Drupal.settings.pathToEWModule + "/img/whos-who/" + item.img)
+              $(".inner", $whosWhoItem).html(item.text)
+
+              var markUp = $whosWhoItem[0].outerHTML
+              $("#item-list").append(markUp)
+            })
+          }
+
+          /**
+           * [getTemplate description]
+           * @return {[type]} [description]
+           */
+          var getTemplate = function() {
+            var $tpl = $('.item-tpl')
+
+            return $tpl.clone().removeClass('item-tpl')
+          }
+
+        }
 
       } // End of custom script
     };

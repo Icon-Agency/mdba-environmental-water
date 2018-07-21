@@ -59,6 +59,11 @@ function water_for_the_environment_features_paragraphs_info() {
       'bundle' => 'ew_optional_component',
       'locked' => '1',
     ),
+    'ew_slider' => array(
+      'name' => 'Environmental Water Slider',
+      'bundle' => 'ew_slider',
+      'locked' => '1',
+    ),
     'ew_text_image' => array(
       'name' => 'Environmental Water Text and Image',
       'bundle' => 'ew_text_image',

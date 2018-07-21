@@ -56,6 +56,15 @@ function water_for_the_environment_features_user_default_permissions() {
     'module' => 'paragraphs_bundle_permissions',
   );
 
+  // Exported permission: 'view paragraph content ew_slider'.
+  $permissions['view paragraph content ew_slider'] = array(
+    'name' => 'view paragraph content ew_slider',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
   // Exported permission: 'view paragraph content ew_text_image'.
   $permissions['view paragraph content ew_text_image'] = array(
     'name' => 'view paragraph content ew_text_image',

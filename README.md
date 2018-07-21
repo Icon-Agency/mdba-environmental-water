@@ -29,6 +29,7 @@ Click Variants > Landing page >Selection rules > Node:type and tick "Environment
 3. Goto: admin/structure/types/manage/ew-pages and make sure next to *Menu settings* the menu *nvironmental Water* is checked
 4. Go to URL aliases pattern settings and set pattern for *all Environmental Water Pages paths* to:
 ```managing-water/water-for-environment/[node:title]```
+5. If feature revert does not activate new features, *disable, uninstall and re-enable* the modules
 
 ### Creating new Environmental Water pages
 Be sure to first *unpublish* the old pages you are about to replace and set their URL aliases to something like "page-title-old"
@@ -61,6 +62,12 @@ Fileds:
 * Title (field_ew_pb_title, field--field-ew-pb-title.tpl.php)
 * Text (field_ew_pb_text)
 * More link (field_ew_pb_more_link)
+
+### Environmental Water Slider (ew_slider)
+
+### Environmental Water Embed (ew_embed)
+
+### Environmental Water Highlights (environmental_water_highlights)
 
 ## Content type: Environmental Water Pages (ew_pages)
 Custom fields: 
