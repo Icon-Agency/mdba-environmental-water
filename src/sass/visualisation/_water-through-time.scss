@@ -1,0 +1,548 @@
+$nav-height: 50px;
+
+#water-through-time{
+  width: 100%;
+  height: 100vh;
+  // min-height: 1050px;
+  color: $wtt-body-color;
+  overflow: hidden;
+  position: relative;
+
+  &.dry{
+    @include theme($wtt-dry);
+    .fade{
+      &:before{
+        background-image: url(../img/water-through-time/dry.png);
+      }
+    }
+    .title{
+      svg.dry{
+        display: block !important;
+      }
+    }
+  }
+  &.wet{
+    @include theme($wtt-wet);
+    .fade{
+      &:before{
+        background-image: url(../img/water-through-time/wet.png);
+      }
+    }
+    .title{
+      svg.wet{
+        display: block !important;
+      }
+    }
+  }
+  &.moderate{
+    @include theme($wtt-moderate);
+    .fade{
+      &:before{
+        background-image: url(../img/water-through-time/moderate.png);
+      }
+    }
+    .title{
+      svg.moderate{
+        display: block !important;
+        fill: $wtt-dry;
+      }
+    }
+  }
+  &.flood{
+    @include theme($wtt-flood);
+    .fade{
+      &:before{
+        background-image: url(../img/water-through-time/flood.png);
+      }
+    }
+    .title{
+      svg.flood{
+        display: block !important;
+      }
+    }
+  }
+
+  .fade{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    // Textured background
+    //
+    &:before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-repeat: repeat;
+    }
+
+    // Background colour
+    //
+    &:after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      z-index: -1;
+      opacity: 0.2;
+    }
+  }
+
+  nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: $wtt-grey;
+    &.mobile-nav{
+      background-color: $wtt-nav;
+      ul{
+        li{
+          width: 33.3%;
+          margin-left: -3px;
+          white-space: nowrap;
+        }
+      }
+    }
+    ul{
+      display: block;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      li{
+        display: inline-block;
+        padding: 0;
+        color: #ffffff;
+        a{
+          display: block;
+          color: inherit;
+          text-decoration: none;
+          padding: 15px 18px 12px;
+          background-color: $wtt-nav;
+          position: relative;
+          &:before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: red;
+            content: '';
+          }
+          &:hover{
+            background-color: darken($wtt-nav,10%);
+          }
+          &.dry{
+            &.active{
+              background-color: $wtt-dry;
+            }
+            &:before{
+              background-color: $wtt-dry;
+            }
+          }
+          &.wet{
+            &.active{
+              background-color: $wtt-wet;
+            }
+            &:before{
+              background-color: $wtt-wet;
+            }
+          }
+          &.moderate{
+            &.active{
+              background-color: $wtt-moderate;
+            }
+            &:before{
+              background-color: $wtt-moderate;
+            }
+          }
+          &.flood{
+            &.active{
+              background-color: $wtt-flood;
+            }
+            &:before{
+              background-color: $wtt-flood;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  select{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 15px;
+    background-color: transparent;
+  }
+
+  // Componenets
+  //
+  .center-marker{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+  }
+
+
+  .river,
+  .key,
+  .item,
+  .title{
+    position: absolute;
+    z-index: 2;
+  }
+
+  .river,
+  .bg-color{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .item{
+    z-index: 3;
+  }
+
+  .river{
+    z-index: 1;
+  }
+
+  // Main title
+  //
+  .title{
+    top: 8%;
+    left: -550px;
+    .year,
+    .type{
+      display: block;
+      font-size: 42px;
+      line-height: 1;
+    }
+    .year{
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    #type-title{
+      text-transform: capitalize;
+    }
+    .type{
+      padding-left: 55px;
+      font-weight: 600;
+      position: relative;
+      svg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 42px;
+        width: 42px;
+      }
+      .fill-white{
+        fill: #ffffff !important;
+      }
+    }
+  }
+
+  // key
+  //
+  .key{
+    max-width: 250px;
+    top: 26%;
+    left: -660px;
+    h3{
+      font-size: 20px;
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li{
+        min-height: 25px;
+        padding: 0 0 0 40px;
+        font-size: 14px;
+        font-weight: 600;
+        position: relative;
+        &.water-item{
+          color: $water;
+        }
+        &.spacer{
+          margin-bottom: 10px;
+        }
+        .water,
+        .indicator{
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .water{
+          top: 3px;
+          left: -3px;
+          height: 30px;
+          width: 30px;
+          border-radius: 100%;
+          background-color: $water;
+        }
+        .indicator{
+          height: 25px;
+          width: 25px;
+          background-color: #ffffff;
+          text-align: center;
+          line-height: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            height: 80%;
+            width: 80%;
+            fill: $no-change;
+          }
+        }
+      }
+    }
+  }
+
+  #item-list{
+    .item{
+      display: block !important;
+    }
+  }
+
+  // Item box
+  //
+  .item{
+    display: block;
+    text-decoration: none;
+    width: 240px;
+    &:after{
+      position: absolute;
+      width: 0;
+      height: 0;
+      content: '';
+      z-index: 0;
+    }
+    &:hover{
+      opacity: 0.9;
+      .inner{
+        &:before{
+          display: block;
+        }
+      }
+
+    }
+    .header,
+    .inner{
+      position: relative;
+      z-index: 1;
+    }
+    .header{
+      display: block;
+      width: 100%;
+      background-color: $wtt-item-header;
+      color: #ffffff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding: 3px 5px;
+      font-size: 12px;
+    }
+    .inner{
+      font-weight: 700;
+      background-color: #ffffff;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 3px 5px;
+      font-size: 14px;
+      &:before{
+        display: none;
+        background-color: #ffffff;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        color: $wtt-item-header;
+        content: 'View full report card';
+        text-align: center;
+        font-weight: 400;
+        padding-top: 3px;
+      }
+      .amount{
+        font-weight: 700;
+        color: $water;
+      }
+      .icons{
+        float: right;
+        svg{
+          height: 20px;
+          width: 20px;
+          fill: $no-change;
+          margin-right: 2px;
+        }
+      }
+    }
+
+    // Item positions
+    //
+    &.item1{
+      top: 11%;
+      left: 171px;
+    }
+    &.item2{
+      top: 18%;
+      right: -10px;
+    }
+    &.item3{
+      top: 27%;
+      left: 112px;
+    }
+    &.item4{
+      top: 44%;
+      left: -125px;
+    }
+    &.item5{
+      top: 62%;
+      left: -190px;
+    }
+    &.item6{
+      top: 67%;
+      right: 280px;
+    }
+    &.item7{
+      top: 89%;
+      left: 35px;
+    }
+
+    // Arrow positions
+    //
+    &.arrow-top{
+      padding-top: 16px;
+      &:after{
+        top: 2px;
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+      }
+      &.left{
+        &:after{
+          left: 0;
+          border-left: 16px solid $wtt-item-header;
+        }
+
+        .water{
+          left: -12px;
+        }
+      }
+      &.right{
+        &:after{
+          right: 0;
+          border-right: 16px solid $wtt-item-header;
+        }
+
+        .water{
+          right: -12px;
+        }
+      }
+
+      .water{
+        top: -12px;
+      }
+    }
+
+    &.arrow-bottom{
+      padding-bottom: 16px;
+      &:after{
+        bottom: 2px;
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+      }
+      &.left{
+        &:after{
+          left: 0;
+          border-left: 16px solid #ffffff;
+        }
+
+        .water{
+          left: -12px;
+        }
+      }
+      &.right{
+        &:after{
+          right: 0;
+          border-right: 16px solid #ffffff;
+        }
+
+        .water{
+          right: -12px;
+        }
+      }
+
+      .water{
+        bottom: -12px;
+      }
+    }
+
+    // Water circle
+    //
+    .water{
+      position: absolute;
+      height: 24px;
+      width: 24px;
+      border: 2px solid #ffffff;
+      border-radius: 100%;
+      z-index: 0;
+      .water-inner,
+      .water-outer{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 100%;
+      }
+      .water-inner{
+        background-color: $water;
+      }
+      .water-outer{
+        background-color: $water;
+        opacity: 0.5;
+      }
+    }
+
+  }
+
+  // Colour overrides
+  //
+  div.improvement{
+    background-color: $improvement !important;
+  }
+  svg.improvement{
+    fill: $improvement !important;
+  }
+
+  div.no-change{
+    background-color: $no-change !important;
+  }
+  svg.no-change{
+    fill: $no-change !important;
+  }
+
+  div.decline{
+    background-color: $decline !important;
+  }
+  svg.decline{
+    fill: $decline !important;
+  }
+
+  svg.works{
+    fill: $works !important;
+  }
+}

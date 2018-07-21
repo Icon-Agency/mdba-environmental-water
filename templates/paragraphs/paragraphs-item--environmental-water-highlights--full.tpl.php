@@ -26,12 +26,10 @@
  * @see template_process()
  */
 ?>
-<div class="section bg-white">
-    <div class="container content-container">
-        <div class="grid-row flex flex--aligned <?php print $classes; ?>"<?php print $attributes; ?>>
-            <div class="col col--12 sm-col--12 md-col--10 md-col-push--1"<?php print $content_attributes; ?>>
-              <?php print render($content); ?>
-            </div>
+<div class="container content-container">
+    <div class="grid-row flex flex--aligned <?php print $classes; ?>"<?php print $attributes; ?>>
+        <div class="col col--12 sm-col--12 md-col--10 md-col-push--1"<?php print $content_attributes; ?>>
+          <?php print render($content); ?>
         </div>
     </div>
 </div>

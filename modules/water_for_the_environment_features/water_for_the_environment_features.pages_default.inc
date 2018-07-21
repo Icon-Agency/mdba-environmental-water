@@ -112,6 +112,7 @@ function water_for_the_environment_features_default_page_manager_handlers() {
               <a class="breadcrumb__ancestor breadcrumb__current" href="#">%node:title</a>
             </div>
             <h1 tabindex="-1" id="skippy-target">%node:title</h1>
+            <div class="subtitle">%node:field_ew_subtitle</div>
           </div>
         </div>
       </div>

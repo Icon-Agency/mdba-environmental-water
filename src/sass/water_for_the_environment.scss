@@ -5,8 +5,9 @@ body.node-type-ew-pages {
     float: none;
   }
 
-  .field-name-body {
+  .field-name-body, .banner .subtitle {
     font-size: 1.2em;
+    font-weight: 400;
   }
 
   .field-name-field-ew-pb-text,
@@ -89,7 +90,50 @@ body.node-type-ew-pages {
   }
 
   .field-name-field-ew-optional-components {
+    background: #172B54 url(../img/bg_wave_pattern.png);
+    background-repeat: repeat-y;
+    background-position-x: 50%;
+
+    .bg-white {
+      background: #fff;
+    }
+
     // Classes specific to Environmental Water Optional Component paragraph bundle
+    .paragraphs-item-environmental-water-highlights {
+      h2 {
+        text-align: center;
+        color: #fff;
+        margin-top: 25px;
+      }
+
+      .row-wrapper {
+        float: left;
+        background: #fff;
+        margin: 15px 0 15px 15px;
+
+        .col-left {
+          padding-left: 0;
+          height: 170px;
+          img {
+            min-height: 170px;
+            object-fit: cover;
+          }
+        }
+
+        .col-right {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          height: 170px;
+
+          h3 {
+            color: #00A0DD;
+            font-size: 16px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
     .paragraphs-item-ew-optional-component {
       padding: 25px 0;
 
@@ -211,10 +255,44 @@ body.node-type-ew-pages {
     }
   }
 
+  @media (min-width: 1025px) {
+    .text-image {
+      .col-right {
+        img {
+          min-height: 510px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
   // Mobile phone
   @media (max-width: 600px) {
     // Optional components field
     .field-name-field-ew-optional-components {
+
+      .paragraphs-item-environmental-water-highlights {
+        .row-wrapper {
+          margin: 15px 0;
+
+          .col-left {
+            padding-left: 0;
+            width: auto;
+            padding-right: 0;
+            max-height: 170px;
+            overflow: hidden;
+
+            img {
+              min-width: 345px;
+              object-fit: cover;
+            }
+          }
+
+          .col-right {
+            height: auto;
+          }
+        }
+      }
 
       .text-image {
         .col-left {
@@ -281,6 +359,49 @@ body.node-type-ew-pages {
     }
   }
 
+  // Data visualisation
+  @import 'visualisation/variables';
+  @import 'visualisation/base';
+  @import 'visualisation/mixin';
+  @import 'visualisation/water-through-time';
+  @import 'visualisation/whos-who';
+  @import 'visualisation/responsive';
+  @import 'visualisation/report-card';
+  @import 'visualisation/water-summary';
+
+  ul.dates {
+    li {
+      margin-bottom: 0;
+    }
+  }
+
+  .water-summary {
+    background: #fff;
+    h2 {
+      margin-bottom: 25px;
+    }
+  }
+
+  #water-through-time {
+    svg {
+      margin-bottom: 0;
+      height: 20px !important;
+    }
+  }
+
+  .report-card-wrapper {
+    background-color: #f0ede8;
+    padding: 25px 0;
+
+    .report-card {
+      th {
+        background: #f0ede8;
+        color: #191919;
+        text-align: center;
+      }
+      .table-scroll table tbody td {
+        text-align: center;
+      }
+    }
+  }
 }
-
-

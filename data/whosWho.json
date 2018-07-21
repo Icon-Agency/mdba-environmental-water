@@ -1,0 +1,66 @@
+{
+  "who_who":
+  {
+    "items":
+    [
+      {
+        "item_no": 1,
+        "img": "icon-dam.svg",
+        "label": "River operators & State Constructing Authorities",
+        "summary": "Managers of dams, locks, weirs and other infrastructure; includes the MDBA",
+        "text": "<ul><li>monitoring flows, the weather, system demands, system limitations and the natural environment to help make daily water release decisions</li><li>managing flows to reduce the risk of property damage from flooding</li><li>ensuring that water gets to where it needs to be for towns, farms, stock and the environment.</li></ul>"
+      },
+      {
+        "item_no": 2,
+        "img": "icon-people.svg",
+        "label": "Local communities",
+        "summary": "Residents, farmers, tourism and recreation operators, and Indigenous groups",
+        "text": "<ul><li>identifying important environmental and cultural values in a region </li><li>Nam ullamcorper sed lectus sed pharetra. Sed vulputate ex id lacus maximus, ac dictum ligula condimentum</li><li>Vestibulum consequat pellentesque sapien, ut sodales lacus varius sollicitudin.</li></ul>"
+      },
+      {
+        "item_no": 3,
+        "img": "icon-australia.svg",
+        "label": "Basin States & Territory (NSW, VIC, QLD, SA, ACT)",
+        "summary": "Managers of dams, locks, weirs and other infrastructure; includes the MDBA",
+        "text": "<ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li><li>bringing a range of perspectives to environmental watering programs.</li></ul>"
+      },
+      {
+        "item_no": 4,
+        "img": "icon-frog.svg",
+        "label": "Scientists",
+        "summary": "Environmental experts",
+        "text": "<ul><li>measuring and monitoring the outcomes of water use</li><li>assessing the benefits and lessons learned from environmental watering. </li></ul>"
+      },
+      {
+        "item_no": 5,
+        "img": "icon-paper.svg",
+        "label": "Murray–Darling Basin Authority",
+        "summary": "Independent expertise-based statutory agency",
+        "text": "<ul><li>delivering the Basin Plan</li><li>planning and overseeing delivering water for the environment</li><li>operating dams and weirs in the Murray River.</li></ul>"
+      },
+      {
+        "item_no": 6,
+        "img": "icon-clip-board.svg",
+        "label": "State water management authorities ",
+        "summary": "Responsible for management of waterways including:",
+        "text": "<ul><li>coordinating the delivery of water for the environment on the ground</li><li>applyiny specialist ecological and regional knowledge to monitor waterway health</li><li>working with local community and traditional owner groups.</li></ul>"
+      },
+      {
+        "item_no": 7,
+        "img": "icon-tractor.svg",
+        "label": "Department of Agriculture and Water Resources (DAWR)",
+        "summary": "Australian Government department responsible for the recovery of water",
+        "text": "<p>Recovers water for the environment, through:</p><ul><li>strategically important water purchases</li><li>improved water efficiency by improving on and off farm infrastructure</li></ul>"
+      },
+      {
+        "item_no": 8,
+        "img": "icon-pulse.svg",
+        "label": "Environmental water holders",
+        "summary": "The Commonwealth Environmental Water Holder (CEWH), Basin state governments and MDBA on behalf of The Living Murray program.",
+        "text": "<ul><li>planning and delivering water for the environment</li><li>working with other environmental water holders to coordinate the use of water for the environment.</li></ul>"
+      }
+    ]
+  }
+}
+
+

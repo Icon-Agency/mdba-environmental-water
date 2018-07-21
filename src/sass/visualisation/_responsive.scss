@@ -1,0 +1,370 @@
+// Breakpoint options
+// @include media-breakpoint-up/down/only
+
+@media only screen and (max-width:"1550px"){
+  // .whos-who{
+  //   .whos-who-river{
+  //     .item{
+  //       &.item1{
+  //         right: 219px;
+  //       }
+  //       &.item3{
+  //         left: 213px;
+  //       }
+  //       &.item4{
+  //         bottom: -14%;
+  //         right: 230px;
+  //       }
+  //       &.item6{
+  //         left: 219px;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .our-progress{
+    .heading-wrap{
+      top: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width:"1380px"){
+  #water-through-time{
+    .key{
+      left: -550px;
+    }
+  }
+
+  .whos-who{
+    padding: 60px 0 0;
+    .whos-who-river{
+      margin-top: 60px;
+      padding-bottom: 60px;
+      background-image: url(../img/whos-who/mobile-river.svg);
+      background-position: center top;
+      background-size: contain;
+      background-repeat: no-repeat;
+      .river{
+        display: none;
+      }
+      .center-marker{
+        position: relative;
+        width: 100%;
+        left: 0;
+      }
+      .item{
+        width: 400px;
+        left: 50% !important;
+        margin-left: -200px;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        margin-bottom: 30px;
+        position: relative;
+        .info{
+          padding-left: 90px;
+          position: relative;
+          img{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .our-progress{
+    .heading-wrap{
+      padding: 30px 0;
+      position: relative;
+      top: auto;
+    }
+    .links{
+      display: block !important;
+    }
+  }
+}
+
+@media only screen and (max-width:"1180px"){
+  #water-through-time{
+    overflow: auto;
+    min-height: 1px;
+    height: auto;
+    .fade{
+      min-height: 1px;
+      height: auto;
+    }
+    .desktop-nav{
+      display: none;
+    }
+    .mobile-nav{
+      display: block !important;
+    }
+    .river{
+      display: none;
+    }
+    .river-mob{
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: auto;
+      margin: auto;
+    }
+
+    .center-marker{
+      width: 100%;
+      left: 0;
+      position: relative;
+      height: auto;
+      padding: 50px 0 50px;
+    }
+
+    .title,
+    .key{
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .key{
+      float: left;
+      background-color: #ffffff;
+      margin-bottom: 30px;
+      padding: 20px 15px;
+      h3{
+        font-size: 30px;
+        color: $wtt-body-color;
+      }
+      ul{
+        li{
+          float: left;
+          width: 50%;
+          min-height: 32px;
+          padding: 7px 15px 0 40px;
+          margin-bottom: 10px;
+          font-size: 13px;
+          .indicator{
+            height: 32px;
+            width: 32px;
+          }
+
+          &.full-width-mob{
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .title{
+      clear: both;
+      padding: 0 15px;
+      margin-bottom: 30px;
+    }
+
+    .item{
+      position: relative;
+      padding: 0 0 12px !important;
+      left: 50% !important;
+      right: auto !important;
+      top: auto !important;
+      margin: 0 0 80px -120px;
+      &.arrow-top,
+      &.arrow-bottom{
+        padding: 0 0 16px;
+        &:after{
+          display: none;
+        }
+        &:before{
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          margin-left: -12px;
+          width: 0;
+          height: 0;
+          content: '';
+          z-index: 1;
+          border-left: 12px solid transparent;
+          border-right: 12px solid transparent;
+          border-top: 12px solid #ffffff;
+        }
+      }
+
+      .water{
+        top: auto !important;
+        bottom: -16px !important;
+        left: 50% !important;
+        right: auto !important;
+        margin-left: -12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:"1030px"){
+  .water-summary{
+    .ws-tabs{
+      display: none;
+      // li{
+      //   width: 20% !important;
+      //   &.overall{
+      //     a{
+      //       padding: 0 0 30px;
+      //       .grade{
+      //         top: 22px;
+      //         font-size: 40px;
+      //         font-weight: 700;
+      //         line-height: 0.7;
+      //       }
+      //       p{
+      //         display: none;
+      //       }
+      //       .title{
+      //         display: block;
+      //       }
+      //     }
+      //   }
+      //   a{
+      //     img{
+      //       display: none;
+      //     }
+      //     .grade{
+      //       position: relative;
+      //       left: auto;
+      //       display: block;
+      //       text-align: center;
+      //     }
+      //   }
+      // }
+    }
+
+    .ws-tabs-wrap{
+      border: 0 none;
+    }
+
+    .ws-tab-content{
+      display: block !important;
+      padding-bottom: 0;
+      &:first-child{
+        .inner{
+          display: block;
+        }
+      }
+      .nav-mobile-tab{
+        border-top: 3px solid $ws-tab-border-color;
+        display: block !important;
+        min-height: 94px;
+        &.w-text{
+          .grade{
+            top: 22px;
+            font-size: 40px;
+          }
+        }
+
+        .title{
+          bottom: auto;
+          top: 22px;
+          font-size: 18px;
+        }
+      }
+      .inner{
+        display: none;
+        .summary{
+          display: none;
+        }
+        .col-continer{
+          padding-top: 30px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:"750px"){
+  .water-summary{
+    .hide-at-mobile{
+      display: none;
+    }
+    .ws-tab-content{
+      .left-col,
+      .right-col{
+        width: 100%;
+      }
+      .offset{
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:"510px"){
+  #water-through-time{
+    .river-mob{
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+  }
+
+  .whos-who{
+    padding-left: 15px;
+    padding-right: 15px;
+    .whos-who-river{
+      .item{
+        width: 100%;
+        left: auto !important;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .report-card{
+    .table-scroll{
+      table{
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:"350px"){
+  .whos-who{
+    .whos-who-river{
+      .item{
+        padding-left: 18px;
+        padding-right: 18px;
+        .info{
+          padding-left: 60px;
+          img{
+            height: 40px;
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .water-summary{
+    .ws-tab-content{
+      .nav-mobile-tab{
+        min-height:125px;
+        padding-bottom: 30px;
+        .title{
+          position: absolute;
+          bottom: 30px;
+          top: auto;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+

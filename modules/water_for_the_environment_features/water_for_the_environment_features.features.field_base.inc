@@ -223,6 +223,27 @@ function water_for_the_environment_features_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_ew_subtitle'.
+  $field_bases['field_ew_subtitle'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ew_subtitle',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 256,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_hero_image_large'.
   $field_bases['field_hero_image_large'] = array(
     'active' => 1,

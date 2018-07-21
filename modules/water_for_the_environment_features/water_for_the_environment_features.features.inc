@@ -39,6 +39,16 @@ function water_for_the_environment_features_node_info() {
  */
 function water_for_the_environment_features_paragraphs_info() {
   $items = array(
+    'environmental_water_highlights' => array(
+      'name' => 'Environmental Water Highlights',
+      'bundle' => 'environmental_water_highlights',
+      'locked' => '1',
+    ),
+    'ew_embed' => array(
+      'name' => 'Environmental Water Embed',
+      'bundle' => 'ew_embed',
+      'locked' => '1',
+    ),
     'ew_media_embed' => array(
       'name' => 'Environmental Water Media Embed',
       'bundle' => 'ew_media_embed',

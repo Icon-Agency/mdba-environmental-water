@@ -57,7 +57,7 @@ function water_for_the_environment_features_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
@@ -98,10 +98,12 @@ function water_for_the_environment_features_field_default_field_instances() {
     'label' => 'Optional components',
     'required' => 0,
     'settings' => array(
-      'add_mode' => 'button',
+      'add_mode' => 'select',
       'allowed_bundles' => array(
         'accordion_topic' => -1,
         'annual_report_2016_page' => -1,
+        'environmental_water_highlights' => 'environmental_water_highlights',
+        'ew_embed' => 'ew_embed',
         'ew_media_embed' => 'ew_media_embed',
         'ew_optional_component' => 'ew_optional_component',
         'ew_text_image' => 'ew_text_image',
@@ -113,6 +115,8 @@ function water_for_the_environment_features_field_default_field_instances() {
       'bundle_weights' => array(
         'accordion_topic' => 2,
         'annual_report_2016_page' => 3,
+        'environmental_water_highlights' => 18,
+        'ew_embed' => -22,
         'ew_media_embed' => 12,
         'ew_optional_component' => 4,
         'ew_text_image' => 14,
@@ -131,7 +135,46 @@ function water_for_the_environment_features_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 3,
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-ew_pages-field_ew_subtitle'.
+  $field_instances['node-ew_pages-field_ew_subtitle'] = array(
+    'bundle' => 'ew_pages',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ew_subtitle',
+    'label' => 'Sub-title',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
     ),
   );
 
@@ -188,6 +231,180 @@ function water_for_the_environment_features_field_default_field_instances() {
         'resolution' => '200x150',
       ),
       'type' => 'image_image',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-environmental_water_highlights-field_ew_pb_feature_image'.
+  $field_instances['paragraphs_item-environmental_water_highlights-field_ew_pb_feature_image'] = array(
+    'bundle' => 'environmental_water_highlights',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_ew_pb_feature_image',
+    'label' => 'Highlight image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 1,
+      'default_image' => 0,
+      'file_directory' => 'environmental_water/images',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-environmental_water_highlights-field_ew_pb_text'.
+  $field_instances['paragraphs_item-environmental_water_highlights-field_ew_pb_text'] = array(
+    'bundle' => 'environmental_water_highlights',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_ew_pb_text',
+    'label' => 'Highlight text',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-environmental_water_highlights-field_ew_pb_title'.
+  $field_instances['paragraphs_item-environmental_water_highlights-field_ew_pb_title'] = array(
+    'bundle' => 'environmental_water_highlights',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_ew_pb_title',
+    'label' => 'Title',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-ew_embed-field_ew_pb_embedded_media'.
+  $field_instances['paragraphs_item-ew_embed-field_ew_pb_embedded_media'] = array(
+    'bundle' => 'ew_embed',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Use <strong>PHP code</strong> as the text format or similar format without code filtering.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_ew_pb_embedded_media',
+    'label' => 'Embedded code',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
       'weight' => 2,
     ),
   );
@@ -938,15 +1155,20 @@ function water_for_the_environment_features_field_default_field_instances() {
   t('Additional images');
   t('Attachments');
   t('Body');
+  t('Embedded code');
   t('Embedded media');
   t('Feature image');
   t('Hero Image (Large)');
+  t('Highlight image');
+  t('Highlight text');
   t('Icon image');
   t('Images that can be used in the text area of the component. Those images will <strong>not</strong> be displayed by default.');
   t('More link');
   t('Optional components');
+  t('Sub-title');
   t('Text');
   t('Title');
+  t('Use <strong>PHP code</strong> as the text format or similar format without code filtering.');
 
   return $field_instances;
 }

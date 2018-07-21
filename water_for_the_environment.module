@@ -38,10 +38,37 @@ function water_for_the_environment_entity_info_alter(&$entity_info) {
 }
 */
 
+/**
+ * Implements hook_preprocess_preprocess().
+ */
 function water_for_the_environment_preprocess(&$vars, $hook) {
   // Add custom stylesheet and script when paragraphs are displayed
   if ($hook == 'paragraphs_items') {
     drupal_add_js(drupal_get_path('module', 'water_for_the_environment') . '/js/water_for_the_environment.js');
     drupal_add_css(drupal_get_path('module', 'water_for_the_environment') . '/css/water_for_the_environment.css');
   }
+}
+
+/**
+ * Implements hook_js_alter().
+ */
+function water_for_the_environment_js_alter(&$js) {
+  $menu_item = menu_get_item();
+  if (isset($menu_item['page_arguments'][0]->type)) {
+    if ($menu_item['page_arguments'][0]->type == 'ew_pages') {
+      $module_path = drupal_get_path('module', 'water_for_the_environment');
+      // Our data visualisation requires 1.12
+      // and we up the jquery files on our pages.
+      $js['sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js']['data'] = $module_path . '/js/jquery-1.12.4.min.js';
+      $js['sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js']['version'] = '1.12.4';
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function water_for_the_environment_preprocess_page(&$variables) {
+  $module_path = drupal_get_path('module', 'water_for_the_environment');
+  drupal_add_js('jQuery.extend(Drupal.settings, { "pathToEWModule": "/' . $module_path . '" });', 'inline');
 }

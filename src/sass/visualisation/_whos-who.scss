@@ -1,0 +1,141 @@
+.whos-who{
+  padding: 70px 0 200px;
+  text-align: center;
+  font-size: 14px;
+  background-color: $ww-bg;
+  h2{
+    font-size: 32px;
+    margin-bottom: 1rem;
+  }
+  .whos-who-river{
+    margin: 230px 0 0;
+    position: relative;
+
+    .river{
+      width: 100%;
+      height: 760px;
+      background-position: center;
+      background-size: cover;
+
+    }
+
+    .center-marker{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+    }
+
+    .item{
+      width: 285px;
+      position: absolute;
+      text-align: left;
+      background-color: #ffffff;
+      padding: 30px 20px 42px;
+      border-radius: $ww-border-radius;
+      overflow: hidden;
+      &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $ww-dark-blue;
+        content: '';
+      }
+
+      &.item1{
+        bottom: 70%;
+        right: 355px;
+      }
+      &.item2{
+        bottom: 96%;
+        right: 14px;
+      }
+      &.item3{
+        bottom: 90%;
+        left: 62px;
+      }
+      &.item4{
+        bottom: 71%;
+        left: 387px;
+      }
+      &.item5{
+        bottom: -13%;
+        right: 355px;
+      }
+      &.item6{
+        bottom: 10%;
+        right: 14px;
+      }
+      &.item7{
+        bottom: 10%;
+        left:  62px;
+      }
+      &.item8{
+        bottom: -13%;
+        left: 387px;
+      }
+
+      .info{
+        padding-bottom: 30px;
+        img{
+          display: none;
+          height: 60px;
+          width: 60px;
+        }
+      }
+      .inner{
+        h4{
+          font-size: 18px;
+          font-weight: 700;
+          color: #000000;
+        }
+        h5{
+          font-size: 14px;
+          font-weight: 700;
+          color: #000000;
+        }
+        h4,
+        h5,
+        p,
+        ul{
+          margin-bottom: 15px;
+        }
+        ul{
+          padding-left: 20px;
+        }
+      }
+      .ww-footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        color: $ww-green;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1;
+        padding: 8px 0 14px;
+        border-top: 1px solid $ww-bg;
+        z-index: 1;
+        cursor: pointer;
+        &.close{
+          color: #000000;
+          svg{
+            fill: #000000;
+          }
+        }
+        svg{
+          fill: $ww-green;
+          height: 16px;
+          width: 16px;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+  }
+}

@@ -62,7 +62,8 @@ Fileds:
 * Text (field_ew_pb_text)
 * More link (field_ew_pb_more_link)
 
-## Content type
-Custom fields:
+## Content type: Environmental Water Pages (ew_pages)
+Custom fields: 
+* Sub-title (field_ew_subtitle)
 * Banner image (field_ew_banner_image)
 * Optional components	(field_ew_optional_components, using Paragraph ew_optional_component)

@@ -1,0 +1,15 @@
+@mixin theme($color){
+  .fade{
+    &:after{
+      background-color: $color;
+    }
+  }
+  .title{
+    .type{
+      color: $color;
+      svg{
+        fill: $color;
+      }
+    }
+  }
+}

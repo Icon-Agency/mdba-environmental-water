@@ -1,0 +1,63 @@
+.our-progress{
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+
+  .heading-wrap{
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    h2{
+      font-size: 34px;
+      line-height: 1.1;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+
+  .links{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    a{
+      text-decoration: none;
+      color: #000000;
+      font-size: 15px;
+      font-weight: 600;
+      margin: 0 10px 15px;
+      display: inline-block;
+      position: relative;
+      &:before,
+      &:after {
+          content:"";
+          display:table;
+      }
+      &:after {
+          clear:both;
+      }
+      img{
+        position: relative;
+        top: 0;
+        height: 12px;
+        width: 12px;
+      }
+    }
+  }
+
+  .op-map{
+    svg{
+      a{
+        &:hover{
+          text{
+            fill: $op-blue !important;
+          }
+        }
+      }
+    }
+  }
+}
