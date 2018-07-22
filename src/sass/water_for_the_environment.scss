@@ -242,6 +242,11 @@ body.node-type-ew-pages {
       float: left;
       padding: 0;
 
+      h2 {
+        padding-top: 0;
+        padding-bottom: 25px;
+      }
+
       .col-left {
         height: 480px;
         position: relative;
