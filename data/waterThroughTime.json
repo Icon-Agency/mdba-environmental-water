@@ -15,7 +15,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -26,7 +26,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "100",
           "water_outer": "110",
-          "vegitation": "improvement",
+          "vegetation": "improvement",
           "waterbirds": "no-change",
           "fish": "no-change"
         },
@@ -37,7 +37,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "0",
           "water_outer": "0",
-          "vegitation": "improvement",
+          "vegetation": "improvement",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -48,7 +48,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "20",
           "water_outer": "40",
-          "vegitation": "decline",
+          "vegetation": "decline",
           "waterbirds": "decline",
           "fish": "decline"
         },
@@ -59,7 +59,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "90",
           "water_outer": "100",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "no-change",
           "fish": "improvement"
         },
@@ -70,7 +70,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "20",
           "water_outer": "22",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "no-change"
         },
@@ -81,7 +81,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "30",
           "water_outer": "60",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         }
@@ -101,7 +101,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -112,7 +112,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "decline",
+          "vegetation": "decline",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -123,7 +123,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -134,7 +134,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -145,7 +145,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -156,7 +156,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -167,7 +167,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         }
@@ -187,7 +187,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "decline",
+          "vegetation": "decline",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -198,7 +198,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -209,7 +209,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "decline",
+          "vegetation": "decline",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -220,7 +220,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -231,7 +231,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "decline"
         },
@@ -242,7 +242,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         },
@@ -253,7 +253,7 @@
           "url": "http://www.google.com.au",
           "water_inner": "50",
           "water_outer": "90",
-          "vegitation": "no-change",
+          "vegetation": "no-change",
           "waterbirds": "decline",
           "fish": "improvement"
         }
