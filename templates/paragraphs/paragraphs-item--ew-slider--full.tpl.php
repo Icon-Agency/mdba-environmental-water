@@ -33,52 +33,8 @@
 <?php $module_path = drupal_get_path('module', 'water_for_the_environment'); ?>
 <script type="text/javascript" src="/<?php print $module_path;?>/lib/slick/slick.min.js"></script>
 
-<link href="/<?php print $module_path; ?>/lib/slick/slick.css" rel="stylesheet">
-<link href="/<?php print $module_path; ?>/lib/slick/slick-theme.css" rel="stylesheet">
+<?php
+    drupal_add_css(drupal_get_path('module', 'water_for_the_environment') . '/lib/slick/slick.css', array('group' => CSS_DEFAULT, 'every_page' => FALSE));
+    drupal_add_css(drupal_get_path('module', 'water_for_the_environment') . '/lib/slick/slick-theme.css', array('group' => CSS_DEFAULT, 'every_page' => FALSE));
+?>
 
-<script>
-  (function ($, Drupal) {
-
-    'use strict';
-
-    // EW Javascript.
-    Drupal.behaviors.envEformWildlifeTradePermit = {
-      attach: function (context, settings) {
-
-        $(document).ready(function() {
-
-          $(".field-name-field-ew-pb-additional-images .field-items").slick({
-            mobileFirst: true,
-            dots: true,
-            infinite: true,
-            centerMode: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerPadding: '25%',
-            arrows: true,
-            responsive: [{
-              breakpoint: 1024,
-              settings: {
-                centerPadding: '25%',
-              }
-            },
-              {
-                breakpoint: 600,
-                settings: {
-                  centerPadding: '5%',
-                }
-              }, {
-                breakpoint: 300,
-                settings: {
-                  centerPadding: '0%',
-                }
-              }]
-          });
-
-        });
-
-      } // End of custom script
-    };
-
-  })(jQuery, Drupal);
-</script>

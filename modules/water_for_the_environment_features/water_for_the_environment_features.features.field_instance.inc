@@ -968,7 +968,7 @@ function water_for_the_environment_features_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'ew_slide',
         ),
         'type' => 'image',
         'weight' => 1,

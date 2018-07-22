@@ -43,6 +43,7 @@
       border-right: 3px solid $ws-tab-border-color;
       vertical-align: top;
       margin-left: -4px;
+      margin-bottom: 0 !important;
       &:first-child{
         width: 40%;
         border-left: 3px solid $ws-tab-border-color;
@@ -217,7 +218,5 @@
     .offset{
       margin-left: 8.33333%;
     }
-
-    //
   }
 }

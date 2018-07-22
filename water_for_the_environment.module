@@ -44,7 +44,6 @@ function water_for_the_environment_entity_info_alter(&$entity_info) {
 function water_for_the_environment_preprocess(&$vars, $hook) {
   // Add custom stylesheet and script when paragraphs are displayed
   if ($hook == 'paragraphs_items') {
-    drupal_add_js(drupal_get_path('module', 'water_for_the_environment') . '/js/water_for_the_environment.js');
     drupal_add_css(drupal_get_path('module', 'water_for_the_environment') . '/css/water_for_the_environment.css');
   }
 }

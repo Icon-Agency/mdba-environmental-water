@@ -19,6 +19,45 @@ In module directory, run
 ``` 
 yarn run prod
 ```
+
+### To display caption under active slide
+Add the following code to the *theme's template file* (e.g., template.php)
+```php
+/**
+ * Implements theme_image().
+ */
+function mdba_theme_image(&$variables) {
+
+  $attributes = $variables['attributes'];
+  $attributes['src'] = file_create_url($variables['path']);
+
+  $apply_theming = FALSE;
+
+  $apply_theming_to_variables = [
+    'style_name' => [
+      'ew_slide',
+    ],
+  ];
+  foreach ($apply_theming_to_variables as $var => $val) {
+    if (isset($variables[$var]) AND in_array($variables[$var], $val)) {
+      $apply_theming = TRUE;
+      break;
+    }
+  }
+  if (!$apply_theming) { // Return default theming
+    return '<img' . drupal_attributes($attributes) . ' />';
+  }
+
+  foreach (['width', 'height', 'alt', 'title'] as $key) {
+    if (isset($variables[$key])) {
+      $attributes[$key] = $variables[$key];
+    }
+  }
+  // Return custom theming
+  return '<img' . drupal_attributes($attributes) . ' /><div class="ew-slide-caption">' . (isset($variables['title']) ? $variables['title'] : '') . '</div>';
+}
+```
+
 ## For site administrator
 
 ### Installation and configuration

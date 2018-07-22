@@ -118,7 +118,7 @@ body.node-type-ew-pages {
       .row-wrapper {
         float: left;
         background: #fff;
-        margin: 15px 0 15px 15px;
+        margin: 0 0 30px 15px;
 
         .col-left {
           padding-left: 0;
@@ -130,7 +130,7 @@ body.node-type-ew-pages {
         }
 
         .col-right {
-          padding-top: 15px;
+          padding-top: 20px;
           padding-bottom: 15px;
           height: 170px;
 
@@ -163,6 +163,7 @@ body.node-type-ew-pages {
 
     .ew-slider {
       background: #fff;
+      padding-bottom: 30px;
 
       h2 {
           display: block;
@@ -173,15 +174,29 @@ body.node-type-ew-pages {
         margin-bottom: 0;
       }
 
-      .slick-slide:not(.slick-active) {
+      .slick-slide {
         transform: scale(0.85);
       }
 
-      .slick-slider {
+      .slick-slide.slick-active {
+        transform: scale(1);
         -webkit-transition: transform .5s ease-in-out;
+
+        .ew-slide-caption {
+          display: block;
+          text-align: center;
+          padding: 15px 30px 0 30px;
+        }
+      }
+
+      .slick-slider {
 
         img {
           border-radius: 5px;
+        }
+
+        .ew-slide-caption {
+          display: none;
         }
       }
 
@@ -191,6 +206,8 @@ body.node-type-ew-pages {
 
       .slick-prev, .slick-next {
         z-index: 99;
+        top: calc(50% - 25px);
+
         &:before {
           font-size: 50px;
         }
@@ -218,9 +235,7 @@ body.node-type-ew-pages {
         li.slick-active button:before {
           color: #007FB9;
         }
-
       }
-
     }
 
     .text-image {
@@ -345,7 +360,7 @@ body.node-type-ew-pages {
       .paragraphs-item-environmental-water-highlights {
 
         .row-wrapper {
-          margin: 0px 0 45px 15px;
+          margin: 0px 0 30px 0px;
 
           .col-left {
             padding-left: 0;
@@ -437,9 +452,11 @@ body.node-type-ew-pages {
   @import 'visualisation/mixin';
   @import 'visualisation/water-through-time';
   @import 'visualisation/whos-who';
-  @import 'visualisation/responsive';
   @import 'visualisation/report-card';
   @import 'visualisation/water-summary';
+  @import 'visualisation/water-use';
+  @import 'visualisation/our-progress';
+  @import 'visualisation/responsive';
 
   ul.dates {
     li {
@@ -449,8 +466,16 @@ body.node-type-ew-pages {
 
   .water-summary {
     background: #fff;
+
     h2 {
       margin-bottom: 25px;
+    }
+
+    .water-use {
+      hr {
+        margin-bottom: 15px !important;
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -463,6 +488,12 @@ body.node-type-ew-pages {
 
   .whos-who .whos-who-river .item .ww-footer svg {
     height: 16px !important;
+  }
+
+  .our-progress {
+    background: #fff;
+    text-align: center;
+    margin-bottom: -6px;
   }
 
   .report-card-wrapper {

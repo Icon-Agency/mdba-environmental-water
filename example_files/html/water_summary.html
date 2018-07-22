@@ -3,7 +3,7 @@
 <div class="water-summary">
     <h2>Water summary</h2>
     <div class="ws-tabs-wrap">
-        <div class="container"><!--  <-- Replace this with Murry grid equivalant -->
+        <div class="container">
 
             <ul class="ws-tabs">
                 <li class="overall"> <a href="#ws-overall" class="ws-tab active"> <span class="grade excellent">A</span>
@@ -181,14 +181,60 @@
         </div>
     </div>
     <div class="water-use">
-        <div class="col-continer">
-            <div class="left-col"> <span class="sub-title">Aims</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                <p>Nam ullamcorper sed lectus sed pharetra. Sed vulputate ex id lacus maximus, ac dictum ligula condimentum. Vestibulum consequat pellentesque sapien, ut sodales lacus varius sollicitudin.</p>
-            </div>
-            <div class="right-col offset"> <span class="sub-title">Outcomes</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                <p>Nam ullamcorper sed lectus sed pharetra. Sed vulputate ex id lacus maximus, ac dictum ligula condimentum. Vestibulum consequat pellentesque sapien, ut sodales lacus varius sollicitudin.</p>
+        <div class="container"><!--  <-- Replace this with Murry grid equivalant -->
+
+            <div class="col-continer">
+                <div class="left-col">
+                    <div class="water-chart">
+                        <div class="left">
+                            <span class="gl">31.1GL</span>
+                            <p>water for the environment delivered at this site</p>
+                        </div>
+                        <div class="middle">
+                            <span class="gl">31.1GL</span>
+                            <p>water used at this site</p>
+                        </div>
+                        <div class="right">
+                            <span class="gl">31.1GL</span>
+                            <p>flowing back to the river system</p>
+                        </div>
+                        <img src="/<?php print $module_path;?>/img/water-summary/water-use.png" alt="clipart representing water use">
+                    </div>
+                </div>
+
+                <div class="right-col offset">
+                    <div class="wu-content">
+                        <h4>Actions</h4>
+                        <p>
+                            Water for the environment released
+                            <img src="/<?php print $module_path;?>/img/water-summary/tick.png" alt="a tick mark">
+                        </p>
+
+                        <hr>
+
+                        <h4>Client conditions</h4>
+                        <p>
+                            <strong>Flooding </strong> - Extensive and prolonged natural flooding in the area (2016)
+                            <img src="/<?php print $module_path;?>/img/water-summary/water.png" alt="clipart of a drop of water">
+                        </p>
+
+                        <hr>
+
+                        <h4>Works</h4>
+                        <p>
+                            Are there works at this site?
+                            <img src="/<?php print $module_path;?>/img/water-summary/tick.png" alt="a tick mark">
+                        </p>
+                        <p>
+                            Works in use this year?
+                            <img src="/<?php print $module_path;?>/img/water-summary/cross.png" alt="a cross mark">
+                        </p>
+
+                        <hr>
+
+                        <span class="updated">Updated april 2017</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

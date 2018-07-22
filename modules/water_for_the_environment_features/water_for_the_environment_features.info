@@ -66,6 +66,7 @@ features[field_instance][] = paragraphs_item-ew_text_image-field_ew_pb_feature_i
 features[field_instance][] = paragraphs_item-ew_text_image-field_ew_pb_more_link
 features[field_instance][] = paragraphs_item-ew_text_image-field_ew_pb_text
 features[field_instance][] = paragraphs_item-ew_text_image-field_ew_pb_title
+features[image][] = ew_slide
 features[menu_custom][] = menu-environmental-water
 features[menu_links][] = menu-environmental-water_deciding-where-water-goes:<front>
 features[menu_links][] = menu-environmental-water_delivering-water-for-the-environment:<front>

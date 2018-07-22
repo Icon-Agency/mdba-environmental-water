@@ -17,6 +17,30 @@ function water_for_the_environment_features_ctools_plugin_api($module = NULL, $a
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function water_for_the_environment_features_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: ew_slide.
+  $styles['ew_slide'] = array(
+    'label' => 'Environmental water slide',
+    'effects' => array(
+      9 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 1120,
+          'height' => 600,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function water_for_the_environment_features_node_info() {
