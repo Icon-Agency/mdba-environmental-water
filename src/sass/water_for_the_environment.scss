@@ -9,11 +9,6 @@ body.node-type-ew-pages {
     margin-bottom: 0;
   }
 
-  h2 {
-    padding: 50px 0 40px;
-    margin: 0 !important;
-  }
-
   .field-name-body, .banner .subtitle {
     font-size: 1.2em;
     font-weight: 400;
@@ -102,6 +97,11 @@ body.node-type-ew-pages {
     background: #172B54 url(../img/bg_wave_pattern.png);
     background-repeat: repeat-y;
     background-position-x: 50%;
+
+    h2 {
+      padding: 50px 0 40px;
+      margin: 0 !important;
+    }
 
     .bg-white {
       background: #fff;
