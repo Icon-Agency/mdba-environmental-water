@@ -209,7 +209,7 @@ $nav-height: 50px;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100% !important;
   }
   .item{
     z-index: 3;
@@ -245,7 +245,7 @@ $nav-height: 50px;
         position: absolute;
         top: 0;
         left: 0;
-        height: 42px;
+        height: 42px !important;
         width: 42px;
       }
       .fill-white{
