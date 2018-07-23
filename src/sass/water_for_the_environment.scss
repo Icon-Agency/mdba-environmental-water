@@ -10,8 +10,8 @@ body.node-type-ew-pages {
   }
 
   .field-name-body, .banner .subtitle {
-    font-size: 1.2em;
-    font-weight: 400;
+    font-size: 1.26667rem;
+    line-height: 1.6;
   }
 
   .field-name-field-ew-pb-text,
@@ -159,6 +159,12 @@ body.node-type-ew-pages {
         }
       }
 
+      .col-right {
+        h2 {
+          padding: 0 0 40px;
+        }
+      }
+
     }
 
     .ew-slider {
@@ -242,6 +248,7 @@ body.node-type-ew-pages {
     .text-image {
       float: left;
       padding: 0;
+      margin-top: 25px;
 
       h2 {
         padding-top: 0;
@@ -284,6 +291,10 @@ body.node-type-ew-pages {
       background-size: cover;
       padding: 50px 0;
 
+      h2 {
+        padding-top: 0;
+      }
+
       .field-name-field-ew-pb-embedded-media {
         padding-bottom: 50px;
 
@@ -321,6 +332,7 @@ body.node-type-ew-pages {
     .field-name-field-ew-optional-components {
 
       .text-image {
+
         .col-left {
           height: 250px;
 
@@ -476,6 +488,7 @@ body.node-type-ew-pages {
 
     h2 {
       margin-bottom: 25px;
+      padding-top: 0;
     }
 
     .water-use {
@@ -487,6 +500,8 @@ body.node-type-ew-pages {
   }
 
   #water-through-time {
+    background: #fff;
+
     svg {
       margin-bottom: 0;
       height: 20px !important;
@@ -501,6 +516,10 @@ body.node-type-ew-pages {
     background: #fff;
     text-align: center;
     margin-bottom: -6px;
+
+    h2 {
+      padding-top: 25px;
+    }
   }
 
   .environmental-strategies-wrapper {
