@@ -100,6 +100,7 @@ $nav-height: 50px;
     z-index: 2;
     background-color: $wtt-grey;
     &.mobile-nav{
+      padding: 15px;
       background-color: $wtt-nav;
       ul{
         li{
@@ -107,6 +108,15 @@ $nav-height: 50px;
           margin-left: -3px;
           white-space: nowrap;
         }
+      }
+      select{
+        background-color: #ffffff;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url(../img/water-through-time/sort-down-solid.svg) 96% 11px no-repeat #fff;
+        background-size: 12px;
+        color: #000;
       }
     }
     ul{

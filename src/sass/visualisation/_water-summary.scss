@@ -7,7 +7,7 @@
   h2{
     font-size: 34px;
     text-align: center;
-    margin-bottom: 60px;
+    margin: 0 0 60px;
   }
 
   .grade{
@@ -52,6 +52,9 @@
         //max-width: 400px;
         a{
           padding: 15px 15px 30px 90px;
+          p{
+            color: #000000 !important;
+          }
           .grade{
             font-size: 60px;
           }
@@ -149,7 +152,7 @@
   }
 
   .ws-tab-content{
-    padding: 0 15px 45px;
+    padding: 0 15px;
     text-align: left;
     background-color: $ws-tab-bg;
 
@@ -172,6 +175,7 @@
         left: 0;
         max-height: 100px;
         max-width: 100px;
+        margin: 0;
       }
       .grade{
         position: absolute;
@@ -200,8 +204,16 @@
       margin-bottom: 15px;
     }
 
+    .inner{
+      overflow: hidden;
+      img{
+        margin-bottom: -8px;
+      }
+    }
+
     // Mini grid
     .col-continer{
+      padding-bottom: 45px;
       position: relative;
       &:before,
       &:after{

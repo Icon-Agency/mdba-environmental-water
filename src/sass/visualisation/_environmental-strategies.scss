@@ -5,6 +5,7 @@
 
   h2{
     font-size: 34px;
+    margin: 0 0 60px;
     text-align: center;
   }
 
@@ -67,6 +68,7 @@
       }
       .es-footer{
         background-color: lighten($es-blue, 20%);
+        color: $es-blue-text;
       }
     }
     &.regional{
@@ -79,15 +81,12 @@
       }
       .es-footer{
         background-color: lighten($es-green, 20%);
+        color: $es-green-text;
       }
     }
 
     .inner{
       padding: 40px 60px;
-
-      h2 {
-        margin: 0 0 60px !important;
-      }
     }
 
     img{

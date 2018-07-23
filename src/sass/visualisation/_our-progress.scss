@@ -15,8 +15,6 @@
       line-height: 1.1;
       text-align: center;
       margin-bottom: 10px;
-      margin-top: 0 !important;
-      padding: 0 !important;
     }
     p{
       font-size: 16px;
@@ -46,9 +44,8 @@
       img{
         position: relative;
         top: 0;
-        height: 12px !important;
+        height: 12px;
         width: 12px;
-        margin-bottom: 0;
       }
     }
   }
