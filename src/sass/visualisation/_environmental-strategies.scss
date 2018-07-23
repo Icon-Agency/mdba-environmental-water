@@ -1,0 +1,133 @@
+.environmental-strategies{
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 30px;
+
+  h2{
+    font-size: 34px;
+    margin: 0 0 60px;
+    text-align: center;
+  }
+
+  // Mini grid
+  .col-continer{
+    position: relative;
+    &:before,
+    &:after{
+      content: " ";
+      display: table;
+    }
+    &:after{
+      clear: both;
+    }
+  }
+  .left-col,
+  .right-col{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .left-col{
+    width: 50%;
+    float: left;
+  }
+  .right-col{
+    width: 50%;
+    float: left;
+  }
+
+  .item{
+    text-align: left;
+    color: #ffffff;
+    font-size: 18px;
+    >.inner{
+      min-height: 700px;
+    }
+
+    &.arrow{
+      position: relative;
+      &:after{
+        position: absolute;
+        top: 50%;
+        margin-top: -8px;
+        right: -14px;
+        width: 0;
+        height: 0;
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+        border-left: 16px solid $es-blue;
+        content: '';
+        z-index: -1;
+      }
+    }
+    &.basin{
+      background-color: $es-blue;
+      h2{
+        color: $es-blue-text;
+        &:after{
+          background-color: $es-blue-text;
+        }
+      }
+      .es-footer{
+        background-color: lighten($es-blue, 20%);
+      }
+    }
+    &.regional{
+      background-color: $es-green;
+      h2{
+        color: $es-green-text;
+        &:after{
+          background-color: $es-green-text;
+        }
+      }
+      .es-footer{
+        background-color: lighten($es-green, 20%);
+      }
+    }
+
+    .inner{
+      padding: 40px 60px;
+    }
+
+    img{
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    h2{
+      font-size: 32px;
+      margin: 0 0 26px;
+      padding: 0 0 8px;
+      position: relative;
+      text-align: left;
+      &:after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 54px;
+        content: '';
+      }
+    }
+    h5{
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+
+    .es-footer{
+      position: relative;
+      .arrow{
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 100%;
+      }
+      .inner{
+        padding-top: 75px;
+      }
+    }
+  }
+}
+

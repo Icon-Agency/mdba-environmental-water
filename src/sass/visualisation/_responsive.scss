@@ -21,7 +21,7 @@
     .whos-who-river{
       margin-top: 60px;
       padding-bottom: 60px;
-      background-image: url(../img/whos-who/mobile-river.svg);
+      background-image: url(../images/whos-who/mobile-river.svg);
       background-position: center top;
       background-size: contain;
       background-repeat: no-repeat;
@@ -216,6 +216,14 @@
       margin-left: 0;
     }
   }
+
+  .environmental-strategies{
+    .item{
+      >.inner{
+        min-height: 1px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width:"1030px"){
@@ -317,6 +325,18 @@
       }
     }
   }
+
+  .environmental-strategies{
+    .arrow{
+      &:after{
+        display: none;
+      }
+    }
+    .left-col,
+    .right-col{
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width:"510px"){
@@ -344,6 +364,15 @@
     .table-scroll{
       table{
         width: 500px;
+      }
+    }
+  }
+
+  .environmental-strategies{
+    .item{
+      font-size: 14px;
+      .inner{
+        padding: 40px 15px;
       }
     }
   }
@@ -381,4 +410,3 @@
     }
   }
 }
-
