@@ -1,48 +1,50 @@
 <!-- HTML code example: Environmental strategies and plans -->
 <?php $module_path = drupal_get_path('module', 'water_for_the_environment'); ?>
 
-<div style="max-width: 1140px; margin: 0 auto; display: block; "><!--  <-- Replace this with Murry grid equivalant -->
+<div class="environmental-strategies-wrapper">
+    <div class="container"><!--  <-- Replace this with Murry grid equivalant -->
 
-    <div class="environmental-strategies">
-        <h2>Environmental strategies and plans</h2>
+        <div class="environmental-strategies">
+            <h2>Environmental strategies and plans</h2>
 
-        <div class="col-continer">
-            <div class="left-col">
-                <div class="item basin arrow">
-                    <div class="inner">
-                        <img src="/<?php print $module_path;?>/img/environmental-strategies/map-basin-wide.svg" />
-
-                        <h2>Basin wide</h2>
-
-                        <h5>Long term</h5>
-                        <p>Our Basin-wide strategy outlines how we can manage the improvement of the Basin ecosystem over a long period of time by coordinating water uses.</p>
-                    </div>
-
-                    <div class="es-footer">
-                        <img src="/<?php print $module_path;?>/img/environmental-strategies/basin-arrow.svg" class="arrow" />
+            <div class="col-continer">
+                <div class="left-col">
+                    <div class="item basin arrow">
                         <div class="inner">
-                            <h5>Short term</h5>
-                            <p>Our <strong>Annual environmental watering priorities </strong> report guides the short-term use of water for the environment at a Basin scale.</p>
+                            <img src="/<?php print $module_path;?>/img/environmental-strategies/map-basin-wide.svg" alt="a map of Australia highlighting the Basin" />
+
+                            <h2>Basin wide</h2>
+
+                            <h5>Long term</h5>
+                            <p>Our Basin-wide strategy outlines how we can manage the improvement of the Basin ecosystem over a long period of time by coordinating water uses.</p>
+                        </div>
+
+                        <div class="es-footer">
+                            <img src="/<?php print $module_path;?>/img/environmental-strategies/basin-arrow.svg" class="arrow" aria-hidden="true" />
+                            <div class="inner">
+                                <h5>Short term</h5>
+                                <p>Our <strong>Annual environmental watering priorities </strong> report guides the short-term use of water for the environment at a Basin scale.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="right-col">
-                <div class="item regional">
-                    <div class="inner">
-                        <img src="/<?php print $module_path;?>/img/environmental-strategies/map-regional.svg" />
-
-                        <h2>Regional</h2>
-
-                        <h5>Long term</h5>
-                        <p>Each Basin state/territory government either has long-term plans for water use and environmental outcomes, or will have by June 2019.</p>
-                    </div>
-
-                    <div class="es-footer">
-                        <img src="/<?php print $module_path;?>/img/environmental-strategies/regional-arrow.svg" class="arrow" />
+                <div class="right-col">
+                    <div class="item regional">
                         <div class="inner">
-                            <h5>Short term</h5>
-                            <p>Basin governments develop regional annual watering priorities that prioritise environmental water use for the upcoming year.</p>
+                            <img src="/<?php print $module_path;?>/img/environmental-strategies/map-regional.svg" alt="a map of Australia highlighting the states of Qld, SA, NSW and Vic"/>
+
+                            <h2>Regional</h2>
+
+                            <h5>Long term</h5>
+                            <p>Each Basin state/territory government either has long-term plans for water use and environmental outcomes, or will have by June 2019.</p>
+                        </div>
+
+                        <div class="es-footer">
+                            <img src="/<?php print $module_path;?>/img/environmental-strategies/regional-arrow.svg" class="arrow" aria-hidden="true" />
+                            <div class="inner">
+                                <h5>Short term</h5>
+                                <p>Basin governments develop regional annual watering priorities that prioritise environmental water use for the upcoming year.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
