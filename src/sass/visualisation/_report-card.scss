@@ -204,3 +204,47 @@
 
   }
 }
+
+.follow-the-science{
+  padding: 3rem 0;
+  h2{
+    font-size: 34px;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  p{
+    margin-bottom: 1.5rem;
+  }
+  .docPdf{
+    &.alt{
+      display: inline-block;
+      min-height: 33px;
+      padding-left: 40px;
+      text-decoration: none;
+      color: $fts-link-blue;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.4;
+      position: relative;
+      &:hover{
+        color: $fts-link-hover;
+      }
+      &:before{
+        display: none;
+      }
+
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 33px;
+        width: 24px;
+      }
+
+      span{
+        display: block;
+        color: $fts-light-gray;
+      }
+    }
+  }
+}
