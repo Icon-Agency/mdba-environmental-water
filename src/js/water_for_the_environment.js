@@ -86,7 +86,12 @@
           })
           $("#water-through-time").removeClass().addClass(date.type)
           $(".title .year").html(date.label)
-          $(".title #type-title").html(date.type)
+          if (date.type == 'flood') {
+            $(".title #type-title").html('very wet')
+          } else {
+            $(".title #type-title").html(date.type)
+          }
+
         }
 
         /**
