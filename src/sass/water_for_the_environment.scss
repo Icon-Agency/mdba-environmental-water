@@ -508,8 +508,13 @@ body.node-type-ew-pages {
     }
   }
 
-  .whos-who .whos-who-river .item .ww-footer svg {
-    height: 16px !important;
+  .whos-who .whos-who-river {
+    .item .ww-footer svg {
+      height: 16px !important;
+    }
+    h4 {
+      margin-top: 0;
+    }
   }
 
   .our-progress {
