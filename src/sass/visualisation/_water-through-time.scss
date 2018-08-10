@@ -317,6 +317,21 @@ $nav-height: 50px;
             width: 80%;
             fill: $no-change;
           }
+
+          &.improvement,
+          &.no-change,
+          &.decline{
+            svg{
+              padding: 6px;
+              opacity: .5;
+              polygon{
+                fill: #ffffff;
+              }
+              line{
+                stroke: #ffffff;
+              }
+            }
+          }
         }
       }
     }
@@ -393,11 +408,28 @@ $nav-height: 50px;
       }
       .icons{
         float: right;
-        svg{
+        div{
+          display: inline-block;
           height: 20px;
           width: 20px;
-          fill: $no-change;
-          margin-right: 2px;
+          fill: $icon-default;
+          margin-right: 10px;
+          position: relative;
+
+          svg{
+            height: 20px;
+            width: 20px;
+            fill: $icon-default;
+            &.icon-improvement,
+            &.icon-no-change,
+            &.icon-decline{
+              height: 8px;
+              width: 8px;
+              position: absolute;
+              top: 0;
+              right: -8px;
+            }
+          }
         }
       }
     }

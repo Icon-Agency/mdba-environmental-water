@@ -13,206 +13,231 @@
 
       // Water through time custom script
       if ($('#water-through-time').length) {
-        var globalData
-        var pageType
-        var pageDate
 
-        $(window).load(function () {
-          $.get(Drupal.settings.pathToEWModule + '/data/waterThroughTime.json', function (data) {
-            globalData = data.dates
-            init();
-          })
-        })
+          var globalData
+          var pageType
+          var pageDate
 
-        /**
-         * [init description]
-         * @return {[type]} [description]
-         */
-        var init = function () {
-          $('.fade').fadeIn()
-          $.each(globalData, function (index, value) {
-            var $dateItem = getDateTemplate()
-            $(".date", $dateItem).attr("data-id", value.id)
-            $(".date", $dateItem).addClass(value.type)
-            $(".date", $dateItem).html(value.label)
-
-            var markUp = $dateItem[0].outerHTML
-
-            $(".dates").append(markUp)
-
-            if (isDefault(value)) {
-              setActive(value)
-            }
+          $(window).load(function(){
+              $.get(Drupal.settings.pathToEWModule + '/data/waterThroughTime.json', function(data){
+                  globalData = data.dates
+                  init();
+              })
           })
 
-          $.each(globalData, function (index, value) {
-            var $dateItemSelect = getDateSelectTemplate()
-            $dateItemSelect.attr("value", value.id)
-            $dateItemSelect.text(value.label)
+          /**
+           * [init description]
+           * @return {[type]} [description]
+           */
+          var init = function () {
+              $('.fade').fadeIn()
+              $.each(globalData, function(index, value) {
+                  var $dateItem = getDateTemplate()
+                  $(".date", $dateItem).attr("data-id", value.id)
+                  $(".date", $dateItem).addClass(value.type)
+                  $(".date", $dateItem).html(value.label)
 
-            var markUp = $dateItemSelect[0].outerHTML
+                  var markUp = $dateItem[0].outerHTML
+                  $(".dates").append(markUp)
 
-            $(".dates-select").append(markUp)
-          })
+                  if(isDefault(value)) {
+                      setActive(value)
+                  }
+              })
 
-          registerEvents()
-        }
+              $.each(globalData, function(index, value) {
+                  var $dateItemSelect = getDateSelectTemplate()
+                  $dateItemSelect.attr("value", value.id)
+                  $dateItemSelect.text(value.label)
 
-        /**
-         * [isDefault description]
-         * @param  {[type]}  item [description]
-         * @return {Boolean}      [description]
-         */
-        var isDefault = function (item) {
-          return item.is_default
-        }
+                  var markUp = $dateItemSelect[0].outerHTML
+                  $(".dates-select").append(markUp)
+              })
 
-        /**
-         * [setActive description]
-         * @param {[type]} value [description]
-         */
-        var setActive = function (date) {
-          var pageType = date.type
-          $(".dates a").removeClass("active")
-
-
-          $.each($(".dates a"), function (index, link) {
-            if ($(link).attr("data-id") == date.id) {
-
-              $(link).addClass("active")
-              showDateItems(date.items)
-            }
-
-          })
-          $("#water-through-time").removeClass().addClass(date.type)
-          $(".title .year").html(date.label)
-          if (date.type == 'flood') {
-            $(".title #type-title").html('very wet')
-          } else {
-            $(".title #type-title").html(date.type)
+              registerEvents()
           }
 
-        }
+          /**
+           * [isDefault description]
+           * @param  {[type]}  item [description]
+           * @return {Boolean}      [description]
+           */
+          var isDefault = function (item) {
+              return item.is_default
+          }
 
-        /**
-         * [registerEvents description]
-         * @return {[type]} [description]
-         */
-        var registerEvents = function () {
-          $('.dates .date').on("click", function (e) {
-
-            e.preventDefault()
-            $('.fade').fadeOut("200", function () {
-              var clickedDate = $(e.target).data('id')
+          /**
+           * [setActive description]
+           * @param {[type]} value [description]
+           */
+          var setActive = function (date) {
+              var pageType = date.type
               $(".dates a").removeClass("active")
-              getItems(clickedDate)
-              $('.fade').fadeIn()
-            })
-          })
 
 
-          $('.dates-select').on("change", function (e) {
-            $('.fade').fadeOut("200", function () {
-              getItems(e.target.value)
-              $('.fade').fadeIn()
-            })
-          })
-        }
+              $.each($(".dates a"), function(index, link) {
+                  if($(link).attr("data-id") == date.id) {
 
-        /**
-         * [getServices description]
-         * @param  {[type]} findable [description]
-         * @return {[type]}          [description]
-         */
-        var getItems = function (date) {
-          $.each(globalData, function (index, dates) {
-            if (parseInt(date) === dates.id) {
-              setActive(dates)
-            }
-          });
-        }
+                      $(link).addClass("active")
+                      showDateItems(date.items)
+                  }
 
-        /**
-         * [showDateItems description]
-         * @param  {[type]} items [description]
-         * @return {[type]}       [description]
-         */
-        var showDateItems = function (items) {
-          $("#item-list").children().remove()
-
-          $.each(items, function (index, item) {
-            var $itemTemplate = getTemplate()
-
-            $itemTemplate.addClass("item" + item.item_no)
-            if (item.item_no === 1 || item.item_no === 5 || item.item_no === 7) {
-              $itemTemplate.addClass('arrow-bottom left')
-            }
-            if (item.item_no === 2 || item.item_no === 6) {
-              $itemTemplate.addClass('arrow-bottom right')
-            }
-            if (item.item_no === 3 || item.item_no == 4) {
-              $itemTemplate.addClass('arrow-top left')
-            }
-
-            $itemTemplate.attr("href", item.url)
-            if (item.water_inner > 0) {
-              $(".water .water-inner", $itemTemplate).css({
-                'width': item.water_inner + "px",
-                'height': item.water_inner + "px",
-                'margin-top': '-' + item.water_inner / 2 + 'px',
-                'margin-left': '-' + item.water_inner / 2 + 'px',
-                'display': 'block'
               })
-            }
-            if (item.water_outer > 0) {
-              $(".water .water-outer", $itemTemplate).css({
-                'width': item.water_outer + "px",
-                'height': item.water_outer + "px",
-                'margin-top': '-' + item.water_outer / 2 + 'px',
-                'margin-left': '-' + item.water_outer / 2 + 'px',
-                'display': 'block'
+              $("#water-through-time").removeClass().addClass(date.type)
+              $(".title .year").html(date.label)
+              $(".title #type-title").html(date.type)
+          }
+
+          /**
+           * [registerEvents description]
+           * @return {[type]} [description]
+           */
+          var registerEvents = function () {
+              $('.dates .date').on("click", function(e){
+
+                  e.preventDefault()
+                  $('.fade').fadeOut("200", function(){
+                      var clickedDate = $(e.target).data('id')
+                      $(".dates a").removeClass("active")
+                      getItems(clickedDate)
+                      $('.fade').fadeIn()
+                  })
               })
-            }
-            $(".header", $itemTemplate).html(item.name)
-            $(".inner .amount", $itemTemplate).html(item.gl_amount + ' GL')
-            $(".inner .icons .vegetation", $itemTemplate).addClass(item.vegetation)
-            $(".inner .icons .waterbirds", $itemTemplate).addClass(item.waterbirds)
-            $(".inner .icons .fish", $itemTemplate).addClass(item.fish)
 
-            var markUp = $itemTemplate[0].outerHTML
-            $("#item-list").append(markUp)
-          })
-        }
 
-        /**
-         * [getDateTemplate description]
-         * @return {[type]} [description]
-         */
-        var getDateTemplate = function () {
-          var $tpl = $('.date-tpl')
+              $('.dates-select').on("change", function(e){
+                  $('.fade').fadeOut("200", function(){
+                      getItems(e.target.value)
+                      $('.fade').fadeIn()
+                  })
+              })
+          }
 
-          return $tpl.clone().removeClass('date-tpl')
-        }
+          /**
+           * [getServices description]
+           * @param  {[type]} findable [description]
+           * @return {[type]}          [description]
+           */
+          var getItems = function (date) {
+              $.each(globalData, function(index, dates) {
+                  if(parseInt(date) === dates.id) {
+                      setActive(dates)
+                  }
+              });
+          }
 
-        /**
-         * [getDateTemplate description]
-         * @return {[type]} [description]
-         */
-        var getDateSelectTemplate = function () {
-          var $tpl = $('.date-select-tpl')
+          /**
+           * [showDateItems description]
+           * @param  {[type]} items [description]
+           * @return {[type]}       [description]
+           */
+          var showDateItems = function (items) {
+              $("#item-list").children().remove()
 
-          return $tpl.clone().removeClass('date-select-tpl')
-        }
+              $.each(items, function(index, item) {
+                  var $itemTemplate = getTemplate()
 
-        /**
-         * [getTemplate description]
-         * @return {[type]} [description]
-         */
-        var getTemplate = function () {
-          var $tpl = $('.item-tpl')
+                  $itemTemplate.addClass("item" + item.item_no)
+                  if(item.item_no === 1 || item.item_no === 5 || item.item_no === 7){
+                      $itemTemplate.addClass('arrow-bottom left')
+                  }
+                  if(item.item_no === 2 || item.item_no === 6){
+                      $itemTemplate.addClass('arrow-bottom right')
+                  }
+                  if(item.item_no === 3 || item.item_no == 4){
+                      $itemTemplate.addClass('arrow-top left')
+                  }
 
-          return $tpl.clone().removeClass('item-tpl')
-        }
+                  $itemTemplate.attr("href", item.url)
+                  if(item.water_inner > 0 ){
+                      $(".water .water-inner", $itemTemplate).css({
+                          'width' : item.water_inner + "px",
+                          'height' : item.water_inner + "px",
+                          'margin-top' : '-' + item.water_inner / 2 + 'px',
+                          'margin-left' : '-' + item.water_inner / 2 + 'px',
+                          'display' : 'block'
+                      })
+                  }
+                  if(item.water_outer > 0 ){
+                      $(".water .water-outer", $itemTemplate).css({
+                          'width' : item.water_outer + "px",
+                          'height' : item.water_outer + "px",
+                          'margin-top' : '-' + item.water_outer / 2 + 'px',
+                          'margin-left' : '-' + item.water_outer / 2 + 'px',
+                          'display' : 'block'
+                      })
+                  }
+                  if(item.works == true){
+                      $(".inner .icons .works", $itemTemplate).css('display', 'block')
+                  }
+                  $(".header", $itemTemplate).html(item.name)
+                  $(".inner .amount", $itemTemplate).html(item.gl_amount + ' GL')
+                  $(".inner .icons .vegetation", $itemTemplate).addClass(item.vegetation)
+                  $(".inner .icons .waterbirds", $itemTemplate).addClass(item.waterbirds)
+                  $(".inner .icons .fish", $itemTemplate).addClass(item.fish)
+
+                  console.log('here?')
+
+                  iconsSubIcon(item.vegetation, "vegetation", $itemTemplate)
+                  iconsSubIcon(item.waterbirds, "waterbirds", $itemTemplate)
+                  iconsSubIcon(item.fish, "fish", $itemTemplate)
+
+                  var markUp = $itemTemplate[0].outerHTML
+                  $("#item-list").append(markUp)
+              })
+          }
+
+          /**
+           * [getDateTemplate description]
+           * @return {[type]} [description]
+           */
+          var getDateTemplate = function() {
+              var $tpl = $('.date-tpl')
+
+              return $tpl.clone().removeClass('date-tpl')
+          }
+
+          /**
+           * [getDateTemplate description]
+           * @return {[type]} [description]
+           */
+          var getDateSelectTemplate = function() {
+              var $tpl = $('.date-select-tpl')
+
+              return $tpl.clone().removeClass('date-select-tpl')
+          }
+
+          /**
+           * [getTemplate description]
+           * @return {[type]} [description]
+           */
+          var getTemplate = function() {
+              var $tpl = $('.item-tpl')
+
+              return $tpl.clone().removeClass('item-tpl')
+          }
+
+          /**
+           * [iconsSubIcon description]
+           * @param  {[type]} type      [description]
+           * @param  {[type]} className [description]
+           * @param  {[type]} template  [description]
+           * @return {[type]}           [description]
+           */
+          var iconsSubIcon = function (type, className, template) {
+              if(type == "improvement"){
+                  console.log("1")
+                  $(".inner .icons ." + className + "-wrap .icon-improvement", template).css("display", "block")
+              }
+              else if(type == "no-change"){
+                  console.log("2")
+                  $(".inner .icons ." + className + "-wrap .icon-no-change", template).css("display", "block")
+              }
+              else if(type == "decline"){
+                  console.log("3")
+                  $(".inner .icons ." + className + "-wrap .icon-decline", template).css("display", "block")
+              }
+          }
       }
       // EOF Water through time custom script
 
