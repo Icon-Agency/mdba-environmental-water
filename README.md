@@ -102,14 +102,133 @@ Fileds:
 * Text (field_ew_pb_text)
 * More link (field_ew_pb_more_link)
 
-### Environmental Water Slider (ew_slider)
+###Environmental Water Slider (ew_slider)
 
-### Environmental Water Embed (ew_embed)
+###Environmental Water Embed (ew_embed)
 
-### Environmental Water Highlights (environmental_water_highlights)
+###Environmental Water Highlights (environmental_water_highlights)
 
-## Content type: Environmental Water Pages (ew_pages)
+##Content type: Environmental Water Pages (ew_pages)
 Custom fields: 
 * Sub-title (field_ew_subtitle)
 * Banner image (field_ew_banner_image)
 * Optional components	(field_ew_optional_components, using Paragraph ew_optional_component)
+
+##Water through time
+All data is coming from *waterThroughTime.json*
+
+###JSON Example of water through time date
+
+```json
+"id" = Needs to be unique i.e. "id": 1
+"is_default" = Setting one to ture ensures this is the default date loaded when water though time loaded
+"label" = Text for date range label
+"type" = Sets the theme for the selected year. Accepted themes "dry", "wet", "flood" or "moderate"
+"items":
+"gl_amount" = Gigalitres text field displayed on card
+"url" = Navigate to when card clicked
+"water_inner" = Value to dinote inside water inidicator
+"water_outer" = Value to dinote outside water inidicator (needs to be the same or higher than inner value)
+"vegetation" = This detemins the colours of the icon. Accepted values "improvement", "decline" or "no-change"
+"waterbirds" = As above
+"fish" = As above
+"works" = Detemins if works icon shown on card or not. Accepted values true or false
+```
+
+
+### Required JSON format for a given date range and seven card items:
+```json
+{
+  "id": 1,
+  "is_default": true,
+  "label": "2006-07",
+  "type": "dry",
+  "items":
+  [
+    {
+      "item_no": 1,
+      "name": "Barmah-Millewa Forest",
+      "gl_amount": "888.8",
+      "url": "http://www.google.com.au",
+      "water_inner": "50",
+      "water_outer": "90",
+      "vegetation": "decline",
+      "waterbirds": "decline",
+      "fish": "improvement",
+      "works": true
+    },
+    {
+      "item_no": 2,
+      "name": "Koondrook–Perricoota Forest",
+      "gl_amount": "888.8",
+      "url": "http://www.google.com.au",
+      "water_inner": "100",
+      "water_outer": "110",
+      "vegetation": "improvement",
+      "waterbirds": "no-change",
+      "fish": "no-change",
+      "works": false
+    },
+    {
+      "item_no": 3,
+      "name": "Gunbower Forest",
+      "gl_amount": "888.8",
+      "url": "http://www.google.com.au",
+      "water_inner": "0",
+      "water_outer": "0",
+      "vegetation": "improvement",
+      "waterbirds": "decline",
+      "fish": "improvement",
+      "works": false
+    },
+    {
+      "item_no": 4,
+      "name": "Hattah Lakes",
+      "gl_amount": "888.8",
+      "url": "http://www.google.com.au",
+      "water_inner": "20",
+      "water_outer": "40",
+      "vegetation": "decline",
+      "waterbirds": "decline",
+      "fish": "decline",
+      "works": false
+    },
+    {
+      "item_no": 5,
+      "name": "Lindsay, Mulcra & Wallpolla Islands",
+      "gl_amount": "888.8",
+      "url": "http://www.google.com.au",
+      "water_inner": "90",
+      "water_outer": "100",
+      "vegetation": "no-change",
+      "waterbirds": "no-change",
+      "fish": "improvement",
+      "works": false
+    },
+    {
+      "item_no": 6,
+      "name": "Chowilla Floodplains",
+      "gl_amount": "888.8",
+      "url": "http://www.google.com.au",
+      "water_inner": "20",
+      "water_outer": "22",
+      "vegetation": "no-change",
+      "waterbirds": "decline",
+      "fish": "no-change",
+      "works": false
+    },
+    {
+      "item_no": 7,
+      "name": "Murray Mouth, Coorong & Lower Lakes",
+      "gl_amount": "888.8",
+      "url": "http://www.google.com.au",
+      "water_inner": "30",
+      "water_outer": "60",
+      "vegetation": "no-change",
+      "waterbirds": "decline",
+      "fish": "improvement",
+      "works": false
+    }
+  ]
+} 
+```
