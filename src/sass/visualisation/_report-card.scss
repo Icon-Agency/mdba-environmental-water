@@ -2,6 +2,8 @@
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   h2{
+    font-size: 34px;
+    line-height: 1.1;
     text-align: center;
     margin-bottom: 30px;
   }
@@ -16,8 +18,10 @@
       width: 100%;
       overflow:auto;
     }
-    table {
+    .main-table{
       width: 1039px;
+    }
+    table {
       margin:auto;
       border-collapse:separate;
       border-spacing: 0;
@@ -72,6 +76,7 @@
           &.definitions{
             td{
               padding: 20px 20px 10px;
+              text-align: left;
               &.border-left{
                 border-left: 1px solid $rc-border-color;
               }
@@ -101,6 +106,16 @@
           }
           &.grades{
             padding-right: 30px;
+          }
+          &.info-text{
+            font-size: 16px;
+            p{
+              font-size: inherit;
+            }
+            a{
+              text-decoration: none;
+              color: $rc-link;
+            }
           }
 
           h4{
@@ -133,6 +148,9 @@
         &.improvement{
           background-color: $rc-improvement;
         }
+        &.attention{
+          background-color: $rc-attention;
+        }
         &.spacer{
           width: 70px;
           border: 0 none;
@@ -141,7 +159,7 @@
           width: 300px;
         }
         &.footer-td{
-          padding: 30px 0 0;
+          padding: 30px 0 0 !important;
         }
         &.gutter{
           border-left: 4px solid $rc-bg;
@@ -153,10 +171,35 @@
         &.last{
           border-right: 0;
         }
-      }
+        &.no-pad{
+          padding: 0;
+        }
 
+        img{
+          height: 32px;
+          width: 32px;
+          display: inline-block;
+
+        }
+      }
       table{
         border-spacing: 0;
+      }
+
+      &.key{
+        width: 100%;
+        td{
+          color: $rc-dark-blue;
+          font-size: 16px;
+          position: relative;
+          padding-left: 35px;
+          text-align: left;
+          img{
+            position: absolute;
+            top: 10px;
+            left: 0;
+          }
+        }
       }
     }
   }
@@ -168,6 +211,13 @@
     vertical-align: middle;
     background-color: $rc-bg;
     padding-right: 30px !important;
+    padding-left: 38px !important;
+    position: relative;
+    img{
+      position: absolute;
+      top: 18px;
+      left: 0;
+    }
   }
 
   .clone {
@@ -203,47 +253,50 @@
     }
 
   }
-}
-
-.follow-the-science{
-  padding: 3rem 0;
-  h2{
-    font-size: 34px;
-    line-height: 1.1;
-    margin-bottom: 1rem;
+  .text-left{
+    text-align: left !important;
   }
-  p{
-    margin-bottom: 1.5rem;
-  }
-  .docPdf{
-    &.alt{
-      display: inline-block;
-      min-height: 33px;
-      padding-left: 40px;
-      text-decoration: none;
-      color: $fts-link-blue;
+  .rc-tooltip{
+    display: inline-block;
+    position: relative;
+    &:hover{
+      .rc-tooltip-text{
+        display: block !important
+      }
+    }
+    img{
+      position: relative !important;
+      height: 13px !important;
+      width: 13px !important;
+      top: auto !important;
+      left: auto !important;
+      margin-bottom: 0;
+    }
+    .rc-tooltip-text{
+      z-index: 10;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      width: 210px;
+      height: auto;
+      padding: 15px;
+      color: #ffffff;
+      background-color: $rc-tooltip;
+      border-radius: 5px;
+      font-size: 14px;
       font-weight: 400;
-      font-size: 12px;
-      line-height: 1.4;
-      position: relative;
-      &:hover{
-        color: $fts-link-hover;
-      }
-      &:before{
-        display: none;
-      }
-
-      img{
+      margin-left: -105px;
+      &:after{
         position: absolute;
-        top: 0;
-        left: 0;
-        height: 33px;
-        width: 24px;
-      }
-
-      span{
-        display: block;
-        color: $fts-light-gray;
+        bottom: -10px;
+        left: 50%;
+        margin-left: -10px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $rc-tooltip;
+        content: '';
       }
     }
   }

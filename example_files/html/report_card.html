@@ -20,7 +20,7 @@
                         </thead>
                         <tbody id="item-list">
                         <tr>
-                            <th class="fixed-side">2016-17</th>
+                            <th class="fixed-side"><img src="/<?php print $module_path;?>/img/report-card/icon-flood.png" alt="flood icon"/>2016-17</th>
                             <td class="overall-col excellent">A</td>
                             <td class="spacer">&nbsp;</td>
                             <td class="first gutter good">B+</td>
@@ -29,7 +29,7 @@
                             <td class="last gutter good">B+</td>
                         </tr>
                         <tr>
-                            <th class="fixed-side">2015-16</th>
+                            <th class="fixed-side"><img src="/<?php print $module_path;?>/img/report-card/icon-dry.png" alt="dry icon"/>2015-16</th>
                             <td class="overall-col good">B+</td>
                             <td class="spacer">&nbsp;</td>
                             <td class="first gutter good">B+</td>
@@ -38,7 +38,7 @@
                             <td class="last gutter good">B</td>
                         </tr>
                         <tr>
-                            <th class="fixed-side">2014-15</th>
+                            <th class="fixed-side"><img src="/<?php print $module_path;?>/img/report-card/icon-moderate.png" alt="moderate icon"/>2014-15</th>
                             <td class="overall-col good">B</td>
                             <td class="spacer">&nbsp;</td>
                             <td class="first gutter good">B+</td>
@@ -47,7 +47,7 @@
                             <td class="last gutter improvement">C</td>
                         </tr>
                         <tr>
-                            <th class="fixed-side">2013-14</th>
+                            <th class="fixed-side"><img src="/<?php print $module_path;?>/img/report-card/icon-wet.png" alt="wet icon"/>2013-14</th>
                             <td class="overall-col improvement">C+</td>
                             <td class="spacer">&nbsp;</td>
                             <td class="first gutter good">B-</td>
@@ -56,7 +56,7 @@
                             <td class="last gutter improvement">C</td>
                         </tr>
                         <tr>
-                            <th class="fixed-side">2012-13</th>
+                            <th class="fixed-side"><img src="/<?php print $module_path;?>/img/report-card/icon-flood.png" alt="flood icon"/>2012-13</th>
                             <td class="overall-col improvement">C+</td>
                             <td class="spacer">&nbsp;</td>
                             <td class="first gutter good">B-</td>
@@ -65,7 +65,7 @@
                             <td class="last gutter improvement">C</td>
                         </tr>
                         <tr>
-                            <th class="fixed-side">2011-12</th>
+                            <th class="fixed-side"><img src="/<?php print $module_path;?>/img/report-card/icon-moderate.png" alt="moderate icon"/>2011-12</th>
                             <td class="overall-col good">B-</td>
                             <td class="spacer">&nbsp;</td>
                             <td class="first gutter good">B-</td>
@@ -74,7 +74,7 @@
                             <td class="last gutter improvement">C</td>
                         </tr>
                         <tr>
-                            <th class="fixed-side">2010-11</th>
+                            <th class="fixed-side"><img src="/<?php print $module_path;?>/img/report-card/icon-moderate.png" alt="moderate icon"/>2010-11</th>
                             <td class="overall-col improvement">C+</td>
                             <td class="spacer">&nbsp;</td>
                             <td class="first gutter good">B+</td>
@@ -83,7 +83,7 @@
                             <td class="last gutter improvement">C</td>
                         </tr>
                         <tr>
-                            <th class="fixed-side">2009-10</th>
+                            <th class="fixed-side"><img src="/<?php print $module_path;?>/img/report-card/icon-flood.png" alt="flood icon"/>2009-10</th>
                             <td class="overall-col improvement">C</td>
                             <td class="spacer">&nbsp;</td>
                             <td class="first gutter good">C+</td>
@@ -92,7 +92,7 @@
                             <td class="last gutter improvement">C</td>
                         </tr>
                         <tr>
-                            <th class="fixed-side">2008-09</th>
+                            <th class="fixed-side"><img src="/<?php print $module_path;?>/img/report-card/icon-flood.png" alt="flood icon"/>2008-09</th>
                             <td class="overall-col improvement">C</td>
                             <td class="spacer">&nbsp;</td>
                             <td class="first gutter good">C</td>
@@ -101,7 +101,7 @@
                             <td class="last gutter improvement">C</td>
                         </tr>
                         <tr>
-                            <th class="fixed-side">2007-08</th>
+                            <th class="fixed-side"><img src="/<?php print $module_path;?>/img/report-card/icon-moderate.png" alt="moderate icon"/>2007-08</th>
                             <td class="overall-col improvement">C</td>
                             <td class="spacer">&nbsp;</td>
                             <td class="first gutter good">C</td>
@@ -110,7 +110,7 @@
                             <td class="last gutter improvement">C</td>
                         </tr>
                         <tr>
-                            <th class="fixed-side">2006-07</th>
+                            <th class="fixed-side"><img src="/<?php print $module_path;?>/img/report-card/icon-dry.png" alt="dry icon"/>2006-07</th>
                             <td class="overall-col improvement">C</td>
                             <td class="spacer">&nbsp;</td>
                             <td class="first gutter good">C</td>
@@ -122,31 +122,97 @@
                         <tfoot>
                         <tr>
                             <th class="fixed-side">&nbsp;</th>
-                            <td colspan="6" class="footer-td"><table>
+                            <td colspan="2" class="title grades no-pad text-left footer-td">Climate conditions</td>
+                            <td colspan="4" class="title grades no-pad text-left footer-td">Grades</td>
+                        </tr>
+
+                        <tr>
+                            <th class="fixed-side">&nbsp;</th>
+                            <td colspan="2">
+                                <table class="key">
+                                    <tr>
+                                        <td>
+                                            <img src="/<?php print $module_path;?>/img/report-card/icon-dry.png" alt="dry icon"/>
+                                            Dry
+                                            <div class="rc-tooltip">
+                                                <img src="/<?php print $module_path;?>/img/report-card/rc-tooltip.png" alt="tooltip"/>
+                                                <span class="rc-tooltip-text" style="display: none;">
+                                                                <strong>WET</strong> – prolonged natural flooding in the area
+                                                           </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="/<?php print $module_path;?>/img/report-card/icon-flood.png" alt="flood icon"/>
+                                            Flood
+                                            <div class="rc-tooltip">
+                                                <img src="/<?php print $module_path;?>/img/report-card/rc-tooltip.png" alt="tooltip"/>
+                                                <span class="rc-tooltip-text" style="display: none;">
+                                                                <strong>WET</strong> – prolonged natural flooding in the area
+                                                           </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="/<?php print $module_path;?>/img/report-card/icon-wet.png" alt="wet icon"/>
+                                            Wet
+                                            <div class="rc-tooltip">
+                                                <img src="/<?php print $module_path;?>/img/report-card/rc-tooltip.png" alt="tooltip"/>
+                                                <span class="rc-tooltip-text" style="display: none;">
+                                                                <strong>WET</strong> – prolonged natural flooding in the area
+                                                           </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="/<?php print $module_path;?>/img/report-card/icon-moderate.png" alt="moderate icon"/>
+                                            Moderate
+                                            <div class="rc-tooltip">
+                                                <img src="/<?php print $module_path;?>/img/report-card/rc-tooltip.png" alt="tooltip"/>
+                                                <span class="rc-tooltip-text" style="display: none;">
+                                                                <strong>WET</strong> – prolonged natural flooding in the area
+                                                           </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td colspan="4" class="footer-td"><table>
                                 <tbody>
                                 <tr>
-                                    <td class="title grades">Grades</td>
                                     <td class="fixed-width bump excellent">A+</td>
                                     <td class="fixed-width excellent">A</td>
-                                    <td class="fixed-width bump excellent">A-</td>
                                     <td class="fixed-width bump good">B+</td>
                                     <td class="fixed-width good">B</td>
-                                    <td class="fixed-width bump good">B-</td>
                                     <td class="fixed-width bump improvement">C+</td>
                                     <td class="fixed-width improvement">C</td>
-                                    <td class="fixed-width bump improvement">C-</td>
+                                    <td colspan="2" class="fixed-width attention">D</td>
                                 </tr>
                                 <tr class="definitions">
-                                    <td>&nbsp;</td>
-                                    <td colspan="3"><h4>Excellent</h4>
-                                        <p>Most ecological indicators have been met</p></td>
-                                    <td colspan="3" class="border-left"><h4>Good</h4>
-                                        <p>Some ecological indicators have been met and the ecosystem is showing signs of improvement</p></td>
-                                    <td colspan="3" class="border-left"><h4>Needs improvement</h4>
-                                        <p>Some or few ecological indicators have been met</p></td>
+                                    <td colspan="2">
+                                        <h4>Excellent</h4>
+                                        <p>Most ecological objectives have been met</p>
+                                    </td>
+                                    <td colspan="2" class="border-left">
+                                        <h4>Good</h4>
+                                        <p>More than half of the ecological objectives have been met</p>
+                                    </td>
+                                    <td colspan="2" class="border-left">
+                                        <h4>Needs improvement</h4>
+                                        <p>Fewer than half of the ecological objectives have been met </p>
+                                    </td>
+                                    <td colspan="2" class="border-left">
+                                        <h4>Needs attention</h4>
+                                        <p>No ecological objectives have been met</p>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table></td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">&nbsp;</th>
+                            <td colspan="6" class="text-left info-text">
+                                <p><a href="#">See the outcomes of water over time</a> for a long-term view of how natural and released water affects the health of rivers. Climate conditions are considered when deciding the amount of water delivered for the environment.</p>
+                            </td>
                         </tr>
                         </tfoot>
                     </table>
