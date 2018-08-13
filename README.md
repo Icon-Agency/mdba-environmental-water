@@ -115,7 +115,7 @@ Custom fields:
 * Optional components	(field_ew_optional_components, using Paragraph ew_optional_component)
 
 ##Water through time
-All data is coming from *waterThroughTime.json*
+All Water through time data is coming from *waterThroughTime.json* and can be modified and expanded by changing the data in the JSON file using the following templates:
 
 ###JSON Example of water through time date
 
