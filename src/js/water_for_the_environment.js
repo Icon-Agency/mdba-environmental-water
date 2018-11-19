@@ -142,6 +142,7 @@
 
               $.each(items, function(index, item) {
                   var $itemTemplate = getTemplate()
+                  var temp_wot_px;
 
                   $itemTemplate.addClass("item" + item.item_no)
                   if(item.item_no === 1 || item.item_no === 5 || item.item_no === 7){
@@ -156,20 +157,22 @@
 
                   $itemTemplate.attr("href", item.url)
                   if(item.water_inner > 0 ){
+                      temp_wot_px = mdba_get_wot_chart_px(item.water_inner);
                       $(".water .water-inner", $itemTemplate).css({
-                          'width' : item.water_inner + "px",
-                          'height' : item.water_inner + "px",
-                          'margin-top' : '-' + item.water_inner / 2 + 'px',
-                          'margin-left' : '-' + item.water_inner / 2 + 'px',
+                          'width' : temp_wot_px + "px",
+                          'height' : temp_wot_px + "px",
+                          'margin-top' : '-' + temp_wot_px / 2 + 'px',
+                          'margin-left' : '-' + temp_wot_px / 2 + 'px',
                           'display' : 'block'
                       })
                   }
                   if(item.water_outer > 0 ){
+                      temp_wot_px = mdba_get_wot_chart_px(item.water_outer);
                       $(".water .water-outer", $itemTemplate).css({
-                          'width' : item.water_outer + "px",
-                          'height' : item.water_outer + "px",
-                          'margin-top' : '-' + item.water_outer / 2 + 'px',
-                          'margin-left' : '-' + item.water_outer / 2 + 'px',
+                          'width' :  temp_wot_px + "px",
+                          'height' : temp_wot_px + "px",
+                          'margin-top' : '-' + temp_wot_px / 2 + 'px',
+                          'margin-left' : '-' + temp_wot_px / 2 + 'px',
                           'display' : 'block'
                       })
                   }
@@ -394,5 +397,9 @@
 
     } // End of custom script
   };
+
+  function mdba_get_wot_chart_px(input){
+      return Math.ceil(12 * Math.log(input) + 26);
+  }
 
 })(jQuery, Drupal);

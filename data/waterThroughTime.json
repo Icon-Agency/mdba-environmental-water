@@ -11,79 +11,79 @@
         {
           "item_no": 1,
           "name": "Barmah-Millewa Forest",
-          "gl_amount": "888.8",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
-          "vegetation": "no-change",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         },
         {
           "item_no": 2,
           "name": "Koondrook–Perricoota Forest",
-          "gl_amount": "888.8",
-          "url": "http://www.google.com.au",
-          "water_inner": "100",
-          "water_outer": "110",
-          "vegetation": "improvement",
-          "waterbirds": "no-change",
-          "fish": "no-change"
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         },
         {
           "item_no": 3,
           "name": "Gunbower Forest",
-          "gl_amount": "888.8",
-          "url": "http://www.google.com.au",
-          "water_inner": "0",
-          "water_outer": "0",
-          "vegetation": "improvement",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "gl_amount": "0.5",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "1",
+          "water_outer": "1",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         },
         {
           "item_no": 4,
           "name": "Hattah Lakes",
-          "gl_amount": "888.8",
-          "url": "http://www.google.com.au",
-          "water_inner": "20",
-          "water_outer": "40",
-          "vegetation": "decline",
-          "waterbirds": "decline",
-          "fish": "decline"
+          "gl_amount": "13.5",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "13.5",
+          "water_outer": "13.5",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         },
         {
           "item_no": 5,
           "name": "Lindsay, Mulcra & Wallpolla Islands",
-          "gl_amount": "888.8",
-          "url": "http://www.google.com.au",
-          "water_inner": "90",
-          "water_outer": "100",
-          "vegetation": "no-change",
-          "waterbirds": "no-change",
-          "fish": "improvement"
+          "gl_amount": "4.6",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "4.6",
+          "water_outer": "4.6",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         },
         {
           "item_no": 6,
           "name": "Chowilla Floodplains",
-          "gl_amount": "888.8",
-          "url": "http://www.google.com.au",
-          "water_inner": "20",
-          "water_outer": "22",
-          "vegetation": "no-change",
-          "waterbirds": "decline",
-          "fish": "no-change"
+          "gl_amount": "4.2",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "4.2",
+          "water_outer": "4.2",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         },
         {
           "item_no": 7,
           "name": "Murray Mouth, Coorong & Lower Lakes",
-          "gl_amount": "888.8",
-          "url": "http://www.google.com.au",
-          "water_inner": "30",
-          "water_outer": "60",
-          "vegetation": "no-change",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "gl_amount": "4.7",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "4.7",
+          "water_outer": "4.7",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         }
       ]
     },
@@ -91,170 +91,858 @@
       "id": 2,
       "is_default": false,
       "label": "2007-08",
-      "type": "wet",
+      "type": "dry",
       "items":
       [
         {
           "item_no": 1,
           "name": "Barmah-Millewa Forest",
-          "gl_amount": "777.7",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
+          "gl_amount": "0.1",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0.1",
+          "water_outer": "0.1",
           "vegetation": "no-change",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "waterbirds": "no-change",
+          "fish": "no-change"
         },
         {
           "item_no": 2,
           "name": "Koondrook–Perricoota Forest",
-          "gl_amount": "777.7",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
-          "vegetation": "decline",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         },
         {
           "item_no": 3,
           "name": "Gunbower Forest",
-          "gl_amount": "777.7",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
-          "vegetation": "no-change",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "gl_amount": "7.7",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "7.7",
+          "water_outer": "7.7",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         },
         {
           "item_no": 4,
           "name": "Hattah Lakes",
-          "gl_amount": "777.7",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
-          "vegetation": "no-change",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         },
         {
           "item_no": 5,
           "name": "Lindsay, Mulcra & Wallpolla Islands",
-          "gl_amount": "777.7",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
-          "vegetation": "no-change",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "gl_amount": "7.0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "7",
+          "water_outer": "7",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         },
         {
           "item_no": 6,
           "name": "Chowilla Floodplains",
-          "gl_amount": "777.7",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
-          "vegetation": "no-change",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "gl_amount": "2.3",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "2.3",
+          "water_outer": "2.3",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
         },
         {
           "item_no": 7,
           "name": "Murray Mouth, Coorong & Lower Lakes",
-          "gl_amount": "777.7",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
-          "vegetation": "no-change",
+          "gl_amount": "15.1",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "15.1",
+          "water_outer": "15.1",
+          "vegetation": "",
           "waterbirds": "decline",
-          "fish": "improvement"
+          "fish": "no-change"
         }
       ]
     },
     {
       "id": 3,
-      "is_default": false,
+      "is_default": true,
       "label": "2008-09",
+      "type": "dry",
+      "items":
+      [
+        {
+          "item_no": 1,
+          "name": "Barmah-Millewa Forest",
+          "gl_amount": "1.1",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "1.1",
+          "water_outer": "1.1",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 2,
+          "name": "Koondrook–Perricoota Forest",
+          "gl_amount": "1.0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "1.0",
+          "water_outer": "1.0",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": ""
+        },
+        {
+          "item_no": 3,
+          "name": "Gunbower Forest",
+          "gl_amount": "3.0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "3.0",
+          "water_outer": "3.0",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
+          "fish": "improvement"
+        },
+        {
+          "item_no": 4,
+          "name": "Hattah Lakes",
+          "gl_amount": "4.9",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "4.9",
+          "water_outer": "4.9",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 5,
+          "name": "Lindsay, Mulcra & Wallpolla Islands",
+          "gl_amount": "7.5",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "7.5",
+          "water_outer": "7.5",
+          "vegetation": "no-change",
+          "waterbirds": "",
+          "fish": "decline"
+        },
+        {
+          "item_no": 6,
+          "name": "Chowilla Floodplains",
+          "gl_amount": "4.3",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "4.3",
+          "water_outer": "4.3",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
+        },
+        {
+          "item_no": 7,
+          "name": "Murray Mouth, Coorong & Lower Lakes",
+          "gl_amount": "0.007",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0.007",
+          "water_outer": "0.007",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "is_default": true,
+      "label": "2009-10",
+      "type": "dry",
+      "items":
+      [
+        {
+          "item_no": 1,
+          "name": "Barmah-Millewa Forest",
+          "gl_amount": "18.1",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "18.1",
+          "water_outer": "18.1",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 2,
+          "name": "Koondrook–Perricoota Forest",
+          "gl_amount": "0.5",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0.5",
+          "water_outer": "0.5",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": ""
+        },
+        {
+          "item_no": 3,
+          "name": "Gunbower Forest",
+          "gl_amount": "3.0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "3.0",
+          "water_outer": "3.0",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
+          "fish": "decline"
+        },
+        {
+          "item_no": 4,
+          "name": "Hattah Lakes",
+          "gl_amount": "12.9",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "12.9",
+          "water_outer": "12.9",
+          "vegetation": "decline",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 5,
+          "name": "Lindsay, Mulcra & Wallpolla Islands",
+          "gl_amount": "10.7",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "10.7",
+          "water_outer": "10.7",
+          "vegetation": "no-change",
+          "waterbirds": "",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 6,
+          "name": "Chowilla Floodplains",
+          "gl_amount": "11.7",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "11.7",
+          "water_outer": "11.7",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 7,
+          "name": "Murray Mouth, Coorong & Lower Lakes",
+          "gl_amount": "68.6",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "68.6",
+          "water_outer": "68.6",
+          "vegetation": "decline",
+          "waterbirds": "no-change",
+          "fish": "improvement"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "is_default": true,
+      "label": "2010-11",
       "type": "flood",
       "items":
       [
         {
           "item_no": 1,
           "name": "Barmah-Millewa Forest",
-          "gl_amount": "666.6",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
-          "vegetation": "decline",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "gl_amount": "428.0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "428.0",
+          "water_outer": "428.0",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
         },
         {
           "item_no": 2,
           "name": "Koondrook–Perricoota Forest",
-          "gl_amount": "666.6",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
           "vegetation": "no-change",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "waterbirds": "no-change",
+          "fish": ""
         },
         {
           "item_no": 3,
           "name": "Gunbower Forest",
-          "gl_amount": "666.6",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
-          "vegetation": "decline",
-          "waterbirds": "decline",
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "no-change",
+          "waterbirds": "improvement",
           "fish": "improvement"
         },
         {
           "item_no": 4,
           "name": "Hattah Lakes",
-          "gl_amount": "666.6",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
+          "gl_amount": "14.0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "14.0",
+          "water_outer": "14.0",
+          "vegetation": "decline",
+          "waterbirds": "no-change",
+          "fish": "improvement"
+        },
+        {
+          "item_no": 5,
+          "name": "Lindsay, Mulcra & Wallpolla Islands",
+          "gl_amount": "14.0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "14.0",
+          "water_outer": "14.0",
           "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "improvement"
+        },
+        {
+          "item_no": 6,
+          "name": "Chowilla Floodplains",
+          "gl_amount": "1.8",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "1.8",
+          "water_outer": "1.8",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 7,
+          "name": "Murray Mouth, Coorong & Lower Lakes",
+          "gl_amount": "397.3",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "397.3",
+          "water_outer": "397.3",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "decline"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "is_default": true,
+      "label": "2011-12",
+      "type": "wet",
+      "items":
+      [
+        {
+          "item_no": 1,
+          "name": "Barmah-Millewa Forest",
+          "gl_amount": "424.6",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "424.6",
+          "water_outer": "424.6",
+          "vegetation": "no-change",
+          "waterbirds": "improvement",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 2,
+          "name": "Koondrook–Perricoota Forest",
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 3,
+          "name": "Gunbower Forest",
+          "gl_amount": "0.6",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0.6",
+          "water_outer": "0.6",
+          "vegetation": "decline",
+          "waterbirds": "decline",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 4,
+          "name": "Hattah Lakes",
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 5,
+          "name": "Lindsay, Mulcra & Wallpolla Islands",
+          "gl_amount": "5.9",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "5.9",
+          "water_outer": "5.9",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 6,
+          "name": "Chowilla Floodplains",
+          "gl_amount": "3.0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "3.0",
+          "water_outer": "3.0",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 7,
+          "name": "Murray Mouth, Coorong & Lower Lakes",
+          "gl_amount": "399.8",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "399.8",
+          "water_outer": "399.8",
+          "vegetation": "improvement",
+          "waterbirds": "improvement",
+          "fish": "improvement"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "is_default": true,
+      "label": "2012-13",
+      "type": "moderate",
+      "items":
+      [
+        {
+          "item_no": 1,
+          "name": "Barmah-Millewa Forest",
+          "gl_amount": "2.9",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "2.9",
+          "water_outer": "2.9",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "improvement"
+        },
+        {
+          "item_no": 2,
+          "name": "Koondrook–Perricoota Forest",
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 3,
+          "name": "Gunbower Forest",
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "improvement",
+          "waterbirds": "improvement",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 4,
+          "name": "Hattah Lakes",
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "no-change",
+          "waterbirds": "improvement",
+          "fish": "decline"
+        },
+        {
+          "item_no": 5,
+          "name": "Lindsay, Mulcra & Wallpolla Islands",
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "decline",
+          "waterbirds": "no-change",
+          "fish": "decline"
+        },
+        {
+          "item_no": 6,
+          "name": "Chowilla Floodplains",
+          "gl_amount": "0.1",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0.1",
+          "water_outer": "0.1",
+          "vegetation": "no-change",
+          "waterbirds": "improvement",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 7,
+          "name": "Murray Mouth, Coorong & Lower Lakes",
+          "gl_amount": "1090.0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "1090.0",
+          "water_outer": "1090.0",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "is_default": true,
+      "label": "2013-14",
+      "type": "moderate",
+      "items":
+      [
+        {
+          "item_no": 1,
+          "name": "Barmah-Millewa Forest",
+          "gl_amount": "371.3",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "371.3",
+          "water_outer": "371.3",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "decline"
+        },
+        {
+          "item_no": 2,
+          "name": "Koondrook–Perricoota Forest",
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 3,
+          "name": "Gunbower Forest",
+          "gl_amount": "10.2",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "10.2",
+          "water_outer": "10.2",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
+          "fish": "improvement"
+        },
+        {
+          "item_no": 4,
+          "name": "Hattah Lakes",
+          "gl_amount": "67.3",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "67.3",
+          "water_outer": "67.3",
+          "vegetation": "improvement",
           "waterbirds": "decline",
           "fish": "improvement"
         },
         {
           "item_no": 5,
           "name": "Lindsay, Mulcra & Wallpolla Islands",
-          "gl_amount": "666.6",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
+          "gl_amount": "3.7",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "3.7",
+          "water_outer": "3.7",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 6,
+          "name": "Chowilla Floodplains",
+          "gl_amount": "4.7",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "4.7",
+          "water_outer": "4.7",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 7,
+          "name": "Murray Mouth, Coorong & Lower Lakes",
+          "gl_amount": "764.4",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "764.4",
+          "water_outer": "764.4",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "decline"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "is_default": true,
+      "label": "2014-15",
+      "type": "dry",
+      "items":
+      [
+        {
+          "item_no": 1,
+          "name": "Barmah-Millewa Forest",
+          "gl_amount": "0",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0",
+          "water_outer": "0",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
+          "fish": "improvement"
+        },
+        {
+          "item_no": 2,
+          "name": "Koondrook–Perricoota Forest",
+          "gl_amount": "26.4",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "26.4",
+          "water_outer": "26.4",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": ""
+        },
+        {
+          "item_no": 3,
+          "name": "Gunbower Forest",
+          "gl_amount": "37.4",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "37.4",
+          "water_outer": "37.4",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 4,
+          "name": "Hattah Lakes",
+          "gl_amount": "76.2",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "76.2",
+          "water_outer": "76.2",
+          "vegetation": "",
+          "waterbirds": "improvement",
+          "fish": ""
+        },
+        {
+          "item_no": 5,
+          "name": "Lindsay, Mulcra & Wallpolla Islands",
+          "gl_amount": "6.9",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "6.9",
+          "water_outer": "6.9",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
+        },
+        {
+          "item_no": 6,
+          "name": "Chowilla Floodplains",
+          "gl_amount": "105.6",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "105.6",
+          "water_outer": "105.6",
           "vegetation": "no-change",
           "waterbirds": "decline",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 7,
+          "name": "Murray Mouth, Coorong & Lower Lakes",
+          "gl_amount": "867.1",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "867.1",
+          "water_outer": "867.1",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "is_default": true,
+      "label": "2015-16",
+      "type": "dry",
+      "items":
+      [
+        {
+          "item_no": 1,
+          "name": "Barmah-Millewa Forest",
+          "gl_amount": "430.7",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "430.7",
+          "water_outer": "430.7",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 2,
+          "name": "Koondrook–Perricoota Forest",
+          "gl_amount": "1.5",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "1.5",
+          "water_outer": "1.5",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": ""
+        },
+        {
+          "item_no": 3,
+          "name": "Gunbower Forest",
+          "gl_amount": "28.7",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "28.7",
+          "water_outer": "28.7",
+          "vegetation": "no-change",
+          "waterbirds": "decline",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 4,
+          "name": "Hattah Lakes",
+          "gl_amount": "6.8",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "6.8",
+          "water_outer": "6.8",
+          "vegetation": "",
+          "waterbirds": "decline",
+          "fish": ""
+        },
+        {
+          "item_no": 5,
+          "name": "Lindsay, Mulcra & Wallpolla Islands",
+          "gl_amount": "8.8",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "8.8",
+          "water_outer": "8.8",
+          "vegetation": "",
+          "waterbirds": "",
+          "fish": ""
+        },
+        {
+          "item_no": 6,
+          "name": "Chowilla Floodplains",
+          "gl_amount": "3.2",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "3.2",
+          "water_outer": "3.2",
+          "vegetation": "no-change",
+          "waterbirds": "improvement",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 7,
+          "name": "Murray Mouth, Coorong & Lower Lakes",
+          "gl_amount": "893.8",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "893.8",
+          "water_outer": "893.8",
+          "vegetation": "decline",
+          "waterbirds": "decline",
+          "fish": "no-change"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "is_default": true,
+      "label": "2016-17",
+      "type": "flood",
+      "items":
+      [
+        {
+          "item_no": 1,
+          "name": "Barmah-Millewa Forest",
+          "gl_amount": "417.7",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "417.7",
+          "water_outer": "417.7",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "improvement"
+        },
+        {
+          "item_no": 2,
+          "name": "Koondrook–Perricoota Forest",
+          "gl_amount": "1.4",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "1.4",
+          "water_outer": "1.4",
+          "vegetation": "improvement ",
+          "waterbirds": "improvement ",
+          "fish": "decline"
+        },
+        {
+          "item_no": 3,
+          "name": "Gunbower Forest",
+          "gl_amount": "3.1",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "3.1",
+          "water_outer": "3.1",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 4,
+          "name": "Hattah Lakes",
+          "gl_amount": "31.8",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "31.8",
+          "water_outer": "31.8",
+          "vegetation": "no-change",
+          "waterbirds": "no-change",
+          "fish": "no-change"
+        },
+        {
+          "item_no": 5,
+          "name": "Lindsay, Mulcra & Wallpolla Islands",
+          "gl_amount": "0.5",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "0.5",
+          "water_outer": "0.5",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
           "fish": "decline"
         },
         {
           "item_no": 6,
           "name": "Chowilla Floodplains",
-          "gl_amount": "666.6",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
-          "vegetation": "no-change",
-          "waterbirds": "decline",
-          "fish": "improvement"
+          "gl_amount": "-",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "-",
+          "water_outer": "-",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
+          "fish": "no-change"
         },
         {
           "item_no": 7,
           "name": "Murray Mouth, Coorong & Lower Lakes",
-          "gl_amount": "666.6",
-          "url": "http://www.google.com.au",
-          "water_inner": "50",
-          "water_outer": "90",
-          "vegetation": "no-change",
-          "waterbirds": "decline",
+          "gl_amount": "1000.1",
+          "url": "https://www.mdba.gov.au/",
+          "water_inner": "1000.1",
+          "water_outer": "1000.1",
+          "vegetation": "improvement",
+          "waterbirds": "no-change",
           "fish": "improvement"
         }
       ]
